@@ -1,5 +1,5 @@
 name = Circuit
-description = Please provide a description for your theme.
+description = A theme built for <a href="http://loganfarr.com">LoganFarr.com</a>. Main theme elements are hexagons, circuitry, circles, and subtle hover animations.
 base theme = omega
 screenshot = screenshot.png
 engine = phptemplate
@@ -17,6 +17,7 @@ stylesheets[all][] = css/circuit.no-query.css
 ; Scripts
 ; ========================================
 scripts[] = js/circuit.behaviors.js
+scripts[] = js/circuit.custom.js
 
 ; ========================================
 ; Regions
