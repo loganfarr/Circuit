@@ -1,9 +1,56 @@
-// Requirements
-// ============
-
 @import "susy";
 
 $susy: (
   columns: 12,
   gutters: 1/4,
 );
+
+/*
+ * Susy Reference
+ * container - Establish a layout context
+ * container(x) - Establish a layout context of max width x
+ * gutter() - Inserts gutter space
+ * span(n of x) - Span n number of x columns
+ * span(x%) - Span x percentage of parent container
+*/
+.wrapper {
+	width: 100%;
+}
+
+header,
+#main-content,
+footer {
+	@include container($defaultContainer);
+}
+
+#header-wrapper {
+	header {
+		padding-top: gutter();
+
+		#logo {
+			width: span(4);
+			float:left;
+		}
+
+		nav {
+			width: span(7);
+			float: left;
+		}
+	}
+}
+
+
+#main-wrapper {
+	margin-top: 25px;
+	#main-content {
+		margin-top: 25px;
+	}	
+}
+
+#footer-wrapper {
+	margin-top: 25px;
+
+	footer {
+		margin-top: 25px;
+	}
+}

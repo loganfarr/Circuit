@@ -1,6 +1,21 @@
 header {
 	#logo {
-		width: 150px;
-		height: auto;	
+		img {
+			width: 150px;
+			height: auto;	
+		}
+	}
+
+	nav {
+		ul {
+			li {
+				list-style-type: none;
+				display: inline-block;
+
+				a {
+					padding: 5px 20px;
+				}
+			}
+		}
 	}
 }

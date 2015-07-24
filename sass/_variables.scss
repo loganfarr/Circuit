@@ -1,0 +1,45 @@
+//Variables
+//Layouts
+$desktop: 1200px;
+$smallDesktop: 1000px;
+$tablet: 768px;
+$mobile: 600px;
+
+$defaultContainer: $desktop;
+
+//Colors
+$black:       #333;
+$smoke:       #ccc;
+
+$blue:        #29abe2;
+$darkBlue:    #0472A2;
+$lightBlue:   #7CCCEE;
+
+$green: 	  #21E972;
+$darkGreen:   #00B84A;
+$lightGreen:  #78F2A9;
+
+$purple:      #3A52E6;
+$darkPurple:  #0C23B0;
+$lightPurple: #5E71EB;
+
+//Font Imports & Familys
+//Open Sans
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700);
+$open-sans: 'Open Sans', Helvetica, Arial, sans-serif;
+//Raleway
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300);
+$raleway: 'Raleway', Helvetica, Arial, sans-serif;
+
+
+//Type Settings
+$font-color: #333;
+$font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+$heading-color: $font-color;
+$heading-font: 'Steelfish', serif;
+
+//Menu
+$menu-font-size: 12px;
+$menu-color: #333;
+$menu-hover-color: $blue;

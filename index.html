@@ -11,7 +11,9 @@
 <body>
 	<div ng-app="loganfarr">
 		<div ng-include src="'header.html'"></div>
-		<div ng-view></div>
+		<div id="main-wrapper" class="wrapper">
+			<div ng-view id="main-content"></div>
+		</div>
 		<div ng-include src="'footer.html'"></div>
 	</div>
 </body>
