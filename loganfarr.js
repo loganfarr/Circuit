@@ -1,5 +1,5 @@
 (function() {
-	var app = angular.module("loganfarr",["ngRoute"]);
+	var app = angular.module("loganfarr", ["ngRoute"]);
 
 	app.config(function($routeProvider){
 		$routeProvider
