@@ -2,8 +2,13 @@
 <head>
 	<title>Logan Farr | Web Developer</title>
 	<script type="text/javascript" src="angular.min.js"></script>
+	<script type="text/javascript" src="loganfarr.js"></script>
 </head>
 <body>
-	Hello World.
+	<div ng-app="loganfarr">
+		<div ng-include="header.html"></div>
+		Hello World.
+		<div ng-include="footer.html"></div>
+	</div>
 </body>
 </html>
