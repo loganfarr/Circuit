@@ -16,8 +16,18 @@ stylesheets[all][] = css/circuit.no-query.css
 ; ========================================
 ; Scripts
 ; ========================================
+scripts[] = js/angular.min.js
 scripts[] = js/circuit.behaviors.js
-scripts[] = js/circuit.custom.js
+scripts[] = js/app.js
+scripts[] = js/directives/blog/article.js
+scripts[] = js/directives/blog/blog.js
+scripts[] = js/directives/client/client.js
+scripts[] = js/directives/client/clientBase.js
+scripts[] = js/directives/footer/footer.js
+scripts[] = js/directives/header/header.js
+scripts[] = js/directives/home/home.js
+scripts[] = js/directives/page/page.js
+scripts[] = js/directives/portfolio.js
 
 ; ========================================
 ; Regions
