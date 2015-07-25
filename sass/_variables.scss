@@ -34,10 +34,11 @@ $raleway: 'Raleway', Helvetica, Arial, sans-serif;
 
 //Type Settings
 $font-color: #333;
-$font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+$font-family: $open-sans;
+$font-size: 12px;
 
 $heading-color: $font-color;
-$heading-font: 'Steelfish', serif;
+$heading-font: $raleway;
 
 //Menu
 $menu-font-size: 12px;

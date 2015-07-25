@@ -1,0 +1,24 @@
+@mixin transition($property, $time) {
+	-webkit-transition: $property $time;
+	transition: $property $time;
+}
+
+@mixin button($color: $blue, $text: #fff, $secondaryColor: $darkBlue, $secondaryText: #fff) {
+	background-color: $color;
+	color: $text;
+	padding: 10px 20px;
+	border-radius: 20px;
+	font-size: 15px;
+	display: inline-block;
+	margin: 10px;
+	cursor: pointer;
+
+	@include transition(background-color, 0.3s);
+	@include transition(border-radius, 0.3s);
+
+	&:hover {
+		background-color: $secondaryColor;
+		color: $secondaryText;
+		border-radius: 0;
+	}
+}
