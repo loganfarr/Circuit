@@ -1202,26 +1202,25 @@ footer {
 /* line 27, ../sass/base/_layout.scss */
 #header-wrapper header {
   padding-top: 1.69492%; }
-  /* line 30, ../sass/base/_layout.scss */
-  #header-wrapper header #logo {
-    width: 32.20339%;
-    float: left; }
   /* line 35, ../sass/base/_layout.scss */
   #header-wrapper header nav {
-    width: 57.62712%;
-    float: left; }
+    width: 49.15254%;
+    float: left;
+    display: block;
+    margin-right: auto;
+    margin-left: auto; }
 
-/* line 43, ../sass/base/_layout.scss */
+/* line 45, ../sass/base/_layout.scss */
 #main-wrapper {
   margin-top: 25px; }
-  /* line 45, ../sass/base/_layout.scss */
+  /* line 47, ../sass/base/_layout.scss */
   #main-wrapper #main-content {
     padding-top: 25px; }
 
-/* line 50, ../sass/base/_layout.scss */
+/* line 52, ../sass/base/_layout.scss */
 #footer-wrapper {
   margin-top: 25px; }
-  /* line 53, ../sass/base/_layout.scss */
+  /* line 55, ../sass/base/_layout.scss */
   #footer-wrapper footer {
     padding-top: 25px; }
 
@@ -3585,10 +3584,6 @@ footer {
     .social-media-links #linkedIn-icon:hover {
       color: #fff; }
 
-/* line 3, ../sass/components/_header.scss */
-header #logo img {
-  width: 150px;
-  height: auto; }
 /* line 11, ../sass/components/_header.scss */
 header nav ul li {
   list-style-type: none;

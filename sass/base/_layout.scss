@@ -27,14 +27,16 @@ footer {
 	header {
 		padding-top: gutter();
 
-		#logo {
-			width: span(4);
-			float:left;
-		}
+		// #logo {
+		// 	width: span(4);
+		// 	float:left;
+		// }
 
 		nav {
-			width: span(7);
+			// width: span(7);
+			width: span(6);
 			float: left;
+			@include center-element;
 		}
 	}
 }
