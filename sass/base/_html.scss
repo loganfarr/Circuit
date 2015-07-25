@@ -73,5 +73,12 @@ input[type="submit"] {
 	border: 0; 
 	background-image: none;
 	font-family: $font-family;
-	@include button();
+	@include button($green, #fff, $darkGreen, #fff);
 }
+
+select {
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid rgba(169, 169, 169, 0.5);
+}
+

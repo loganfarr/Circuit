@@ -1100,7 +1100,7 @@ a {
     transition: background-color 0.3s;
     -webkit-transition: border-radius 0.3s;
     transition: border-radius 0.3s; }
-    /* line 27, ../sass/_mixins.scss */
+    /* line 33, ../sass/_mixins.scss */
     a.button:hover {
       background-color: #0472A2;
       color: #fff;
@@ -1117,7 +1117,7 @@ input[type="submit"] {
   border: 0;
   background-image: none;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  background-color: #29abe2;
+  background-color: #21E972;
   color: #fff;
   padding: 10px 20px;
   border-radius: 20px;
@@ -1129,11 +1129,17 @@ input[type="submit"] {
   transition: background-color 0.3s;
   -webkit-transition: border-radius 0.3s;
   transition: border-radius 0.3s; }
-  /* line 27, ../sass/_mixins.scss */
+  /* line 33, ../sass/_mixins.scss */
   input[type="submit"]:hover {
-    background-color: #0472A2;
+    background-color: #00B84A;
     color: #fff;
     border-radius: 0; }
+
+/* line 79, ../sass/base/_html.scss */
+select {
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid rgba(169, 169, 169, 0.5); }
 
 /*
  * Susy Reference
@@ -1187,6 +1193,33 @@ footer {
   /* line 53, ../sass/base/_layout.scss */
   #footer-wrapper footer {
     padding-top: 25px; }
+
+/* line 2, ../sass/base/_temp.scss */
+.messages {
+  width: 90%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border: 5px solid;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px; }
+  /* line 10, ../sass/base/_temp.scss */
+  .messages.status {
+    border-color: #00B84A;
+    background-color: #a7f6c7; }
+  /* line 15, ../sass/base/_temp.scss */
+  .messages.error {
+    border-color: #FF2424;
+    background-color: #ff8282; }
+  /* line 20, ../sass/base/_temp.scss */
+  .messages.warning {
+    border-color: #FFCC24;
+    background-color: #ffedb2; }
 
 /*!
  *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome

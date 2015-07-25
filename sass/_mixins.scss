@@ -11,6 +11,12 @@
 	transition: $property $time;
 }
 
+@mixin center-element {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 @mixin button($color: $blue, $text: #fff, $secondaryColor: $darkBlue, $secondaryText: #fff) {
 	background-color: $color;
 	color: $text;
