@@ -69,6 +69,965 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
+/* ---------------------------------------------------------------------- 
+* Product Name: CSS3 Hexagon Buttons
+* Product URI: http://shariarbd.com/demo/css3-hexagon-buttons/
+* Author: Shariar
+* Author URI: http://shariarbd.com/
+* Description: CSS3 Hexagon Buttons created with pure css3 by Shariar
+* Version: 1.0.0
+* License: The MIT License (MIT)
+* Tags: CSS3 Hexagon Buttons, social buttons, buttons
+* ---------------------------------------------------------------------- */
+/*---------------------------------------------------------------------- /
+Table of Contents 
+------------------------------------------------------------------------ /
+* 1.0 - Class Description 
+* 2.0 - Button style
+* 	2.1 - Default Button style
+*	2.2 - Large Button style 
+*	2.3 - Medium Button style 
+*	2.4 - Small Button style 
+*	2.5 - Extra Small Button style 
+* 3.0 - Margin of hexagon
+* 4.0 - Buttons Effects
+* 5.0 - Buttons Color
+* 	5.1 - Default Colors
+*	5.2 - Default hover colors
+*	5.3 - Custom Button colors
+* 	5.4 - Custom Button hover colors
+* 6.0 - Specific Button colors 
+*	6.1 - Facebook
+*	6.2 - Twitter
+*	6.3 - Google Plus
+*	6.4 - Youtube
+*	6.5 - Linkedin
+*	6.6 - Tumblr
+*	6.7 - RSS
+*	6.8 - Pinterest
+*	6.9 - Vimeo
+* 	6.10 - Github
+*	6.11 - Flickr
+*	6.12 - Dropbox
+*	6.13 - Xing
+*	6.14 - Skype
+*	6.15 - dribbble
+*	6.16 - tencent-weibo
+
+------------------------------------------------------------------------ /
+Table of Contents End
+------------------------------------------------------------------------*/
+/* 1.0 - Class Description 
+------------------------------------------------------------------------ 
+
+hb    		= Hexagon Buttons
+hb-custom 	= Custom Hexagon Buttons
+hb-lg 		= Large Hexagon        = width : 256px
+hb-md 		= Medium Hexagon       = width : 128px
+hb-sm 		= Small Hexagon        = width : 64px
+hb-xs 		= Extra Small Hexagon  = width : 32px
+spin		= Spin hole button on hover
+spin-icon	= Spin icon on hover
+inv 		= Inverse Behaver of buttons 
+
+* 1.0 -Class Description End
+------------------------------------------------------------------------*/
+/* 2.0 - Button style
+------------------------------------------------------------------------*/
+/* 2.1 - Default Button style
+-------------------------------------------------*/
+/* line 81, ../sass/base/_hexagons.scss */
+.hb, .social-media-links .social-media-link {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  /*  Default text align center */
+  z-index: 0; }
+
+/* line 88, ../sass/base/_hexagons.scss */
+.hb:before, .social-media-links .social-media-link:before,
+.hb:after,
+.social-media-links .social-media-link:after {
+  position: absolute;
+  content: "";
+  left: -1px;
+  top: 0;
+  z-index: -1; }
+
+/* line 97, ../sass/base/_hexagons.scss */
+.hb:before, .social-media-links .social-media-link:before {
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  transform: rotate(60deg); }
+
+/* line 105, ../sass/base/_hexagons.scss */
+.hb:after, .social-media-links .social-media-link:after {
+  -webkit-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -ms-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+  transform: rotate(-60deg); }
+
+/* line 113, ../sass/base/_hexagons.scss */
+.hb i, .social-media-links .social-media-link i {
+  z-index: 9;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease; }
+
+/* line 123, ../sass/base/_hexagons.scss */
+.hb, .social-media-links .social-media-link,
+.hb:before,
+.social-media-links .social-media-link:before,
+.hb:after,
+.social-media-links .social-media-link:after {
+  box-sizing: border-box;
+  /* default transition time is set .25s = 250 millisecond  
+  Uncomment following if you want to set transition on hexagon color change */
+  /*-webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+     -ms-transition: all .25s ease;
+      -o-transition: all .25s ease;
+         transition: all .25s ease;*/ }
+
+/* 2.1 - Default Button style End
+-------------------------------------------------*/
+/* 2.2 - Large Button style 
+-------------------------------------------------*/
+/* line 147, ../sass/base/_hexagons.scss */
+.hb-lg {
+  line-height: 150px;
+  font-size: 150px;
+  margin: 74px 0px;
+  /* Original output, margin 0 of the button */
+  /*margin: 89px 15px;*/
+  /* New output, margin 15px of the button,  74 + 15 = 89 */ }
+
+/* line 153, ../sass/base/_hexagons.scss */
+.hb-lg,
+.hb-lg:before,
+.hb-lg:after {
+  height: 148px;
+  width: 256px; }
+
+/* 2.2 - Large Button style  End
+-------------------------------------------------*/
+/* 2.3 - Medium Button style 
+-------------------------------------------------*/
+/* line 168, ../sass/base/_hexagons.scss */
+.hb-md {
+  line-height: 74px;
+  font-size: 74px;
+  margin: 37px 0px;
+  /* Original output, margin 0 of the button */
+  /*margin: 52px 15px;*/
+  /* New output, margin 15px of the button,  37 + 15 = 52 */ }
+
+/* line 174, ../sass/base/_hexagons.scss */
+.hb-md,
+.hb-md:before,
+.hb-md:after {
+  height: 74px;
+  width: 128px; }
+
+/* 2.3 - Medium Button style End
+-------------------------------------------------*/
+/* 2.4 - Small Button style 
+-------------------------------------------------*/
+/* line 189, ../sass/base/_hexagons.scss */
+.hb-sm {
+  line-height: 37px;
+  font-size: 37px;
+  margin: 18.5px 0px;
+  /* Original output, margin 0 of the button */
+  /*margin: 33.5px 15px;*/
+  /* New output, margin 15px of the button,  18.5 + 15 = 33.5 */ }
+
+/* line 196, ../sass/base/_hexagons.scss */
+.hb-sm,
+.hb-sm:before,
+.hb-sm:after {
+  height: 37px;
+  width: 64px; }
+
+/* 2.4 - Small Button style  End
+-------------------------------------------------*/
+/* 2.5 - Extra Small Button style 
+-------------------------------------------------*/
+/* line 210, ../sass/base/_hexagons.scss */
+.hb-xs, .social-media-links .social-media-link {
+  line-height: 18.5px;
+  font-size: 18.5px;
+  margin: 9.5px 0px;
+  /* Original output, margin 0 of the button */
+  /*margin: 33.5px 15px;*/
+  /* New output, margin 15px of the button,  9.5 + 15 = 24.5 */ }
+
+/* line 216, ../sass/base/_hexagons.scss */
+.hb-xs, .social-media-links .social-media-link,
+.hb-xs:before,
+.social-media-links .social-media-link:before,
+.hb-xs:after,
+.social-media-links .social-media-link:after {
+  height: 18.5px;
+  width: 32px; }
+
+/* 2.5 - Extra Small Button style  End
+-------------------------------------------------*/
+/* 2.0 - Button style End
+------------------------------------------------------------------------*/
+/* 3.0 - Margin of hexagon
+------------------------------------------------------------------------*/
+/* line 235, ../sass/base/_hexagons.scss */
+.hb-lg-margin {
+  margin: 15px; }
+
+/* line 238, ../sass/base/_hexagons.scss */
+.hb-md-margin {
+  margin: 15px; }
+
+/* line 241, ../sass/base/_hexagons.scss */
+.hb-sm-margin {
+  margin: 15px; }
+
+/* line 244, ../sass/base/_hexagons.scss */
+.hb-xs-margin {
+  margin: 15px; }
+
+/* line 247, ../sass/base/_hexagons.scss */
+.hb-lg-margin,
+.hb-md-margin,
+.hb-sm-margin,
+.hb-xs-margin {
+  display: inline-block;
+  overflow: hidden; }
+
+/* line 254, ../sass/base/_hexagons.scss */
+.hb-lg-margin {
+  height: 296px;
+  width: 256px; }
+
+/* line 258, ../sass/base/_hexagons.scss */
+.hb-md-margin {
+  height: 148px;
+  width: 128px; }
+
+/* line 262, ../sass/base/_hexagons.scss */
+.hb-sm-margin {
+  height: 74px;
+  width: 64px; }
+
+/* line 266, ../sass/base/_hexagons.scss */
+.hb-xs-margin {
+  height: 38px;
+  width: 32px; }
+
+/* 3.0 - Margin of hexagon End
+------------------------------------------------------------------------*/
+/* 4.0 - Buttons Effects
+------------------------------------------------------------------------*/
+/* line 278, ../sass/base/_hexagons.scss */
+.spin,
+.spin-icon i {
+  -webkit-transition: -webkid-transform .25s  ease;
+  -moz-transition: -moz-transform .25s  ease;
+  -ms-transition: -ms-transform .25s  ease;
+  -o-transition: -o-transform .25s  ease;
+  transition: transform .25s  ease; }
+
+/* line 287, ../sass/base/_hexagons.scss */
+.spin-icon:hover i,
+.spin:hover {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg); }
+
+/*4.0 - Buttons Effects
+------------------------------------------------------------------------*/
+/* 5.0 - Buttons Color
+------------------------------------------------------------------------*/
+/* 5.1 - Default Colors
+-------------------------------------------------*/
+/* line 305, ../sass/base/_hexagons.scss */
+.hb, .social-media-links .social-media-link,
+.hb:before,
+.social-media-links .social-media-link:before,
+.hb:after,
+.social-media-links .social-media-link:after {
+  background-color: #2c3e50;
+  /*  Default background color  */
+  border-left: 1px solid #2c3e50;
+  border-right: 1px solid #2c3e50;
+  color: #2ecc71;
+  /* Default font color */ }
+
+/* 5.1 - Default Colors End
+-------------------------------------------------*/
+/* 5.2 - Default hover colors
+-------------------------------------------------*/
+/* line 319, ../sass/base/_hexagons.scss */
+.hb:hover, .social-media-links .social-media-link:hover,
+.hb:hover:before,
+.social-media-links .social-media-link:hover:before,
+.hb:hover:after,
+.social-media-links .social-media-link:hover:after {
+  background: transparent;
+  border-left: 1px solid #2ecc71;
+  border-right: 1px solid #2ecc71;
+  color: #2ecc71;
+  /* Default hover font color */ }
+
+/* 5.2 - Default hover colors end
+-------------------------------------------------*/
+/* 5.3 - Custom Button colors
+-------------------------------------------------*/
+/* line 334, ../sass/base/_hexagons.scss */
+.hb-custom,
+.hb-custom:before,
+.hb-custom:after {
+  background: #f39c12 !important;
+  /*  Custom background color  */
+  color: white !important;
+  /* Custom font color */
+  /*font-size:20px;*/
+  /* Custom font size */
+  border-left: 1px solid #f39c12 !important;
+  border-right: 1px solid #f39c12 !important; }
+
+/* 5.3 - Custom Button colors End
+-------------------------------------------------*/
+/* 5.4 - Custom Button hover colors
+-------------------------------------------------*/
+/* line 350, ../sass/base/_hexagons.scss */
+.hb-custom:hover,
+.hb-custom:hover:before,
+.hb-custom:hover:after {
+  background: #f1c40f !important;
+  border-left: 1px solid #f1c40f !important;
+  border-right: 1px solid #f1c40f !important;
+  color: black !important;
+  /* Custom hover font color */ }
+
+/* 5.4 - Custom Button hover colors End
+-------------------------------------------------*/
+/* 5.0 - Buttons Color End
+------------------------------------------------------------------------*/
+/* 6.0 - Specific Button colors 
+------------------------------------------------------------------------*/
+/* 6.1 - Facebook
+-------------------------------------------------*/
+/* line 370, ../sass/base/_hexagons.scss */
+.hb-facebook,
+.hb-facebook:before,
+.hb-facebook:after {
+  background: #3B5998;
+  border-color: #3B5998;
+  color: #ffffff; }
+
+/* line 377, ../sass/base/_hexagons.scss */
+.hb-facebook:hover,
+.hb-facebook:hover:before,
+.hb-facebook:hover:after {
+  background: transparent;
+  border-color: #3B5998;
+  color: #3B5998; }
+
+/* Facebook inverts */
+/* line 386, ../sass/base/_hexagons.scss */
+.hb-facebook-inv,
+.hb-facebook-inv:after,
+.hb-facebook-inv:before {
+  color: #3B5998;
+  border-color: #3B5998;
+  background: transparent; }
+
+/* line 393, ../sass/base/_hexagons.scss */
+.hb-facebook-inv:hover,
+.hb-facebook-inv:hover:after,
+.hb-facebook-inv:hover:before {
+  background: #3B5998;
+  border-color: #3B5998;
+  color: #ffffff; }
+
+/* 6.1 - Facebook End
+-------------------------------------------------*/
+/* 6.2 - Twitter
+-------------------------------------------------*/
+/* line 406, ../sass/base/_hexagons.scss */
+.hb-twitter,
+.hb-twitter:before,
+.hb-twitter:after {
+  background: #55ACEE;
+  border-color: #55ACEE;
+  color: #ffffff; }
+
+/* line 414, ../sass/base/_hexagons.scss */
+.hb-twitter:hover,
+.hb-twitter:hover:before,
+.hb-twitter:hover:after {
+  background: transparent;
+  border-color: #55ACEE;
+  color: #55ACEE; }
+
+/* Twitter inverts */
+/* line 423, ../sass/base/_hexagons.scss */
+.hb-twitter-inv, .social-media-links #twitter-icon,
+.hb-twitter-inv:after,
+.social-media-links #twitter-icon:after,
+.hb-twitter-inv:before,
+.social-media-links #twitter-icon:before {
+  background: transparent;
+  border-color: #55ACEE;
+  color: #55ACEE; }
+
+/* line 430, ../sass/base/_hexagons.scss */
+.hb-twitter-inv:hover, .social-media-links #twitter-icon:hover,
+.hb-twitter-inv:hover:after,
+.social-media-links #twitter-icon:hover:after,
+.hb-twitter-inv:hover:before,
+.social-media-links #twitter-icon:hover:before {
+  background: #55ACEE;
+  border-color: #55ACEE;
+  color: #ffffff; }
+
+/* 6.2 - Twitter End
+-------------------------------------------------*/
+/* 6.3 - Google Plus
+-------------------------------------------------*/
+/* line 444, ../sass/base/_hexagons.scss */
+.hb-google-plus,
+.hb-google-plus:before,
+.hb-google-plus:after {
+  background: #db514f;
+  border-color: #db514f;
+  color: #ffffff; }
+
+/* line 451, ../sass/base/_hexagons.scss */
+.hb-google-plus:hover,
+.hb-google-plus:hover:before,
+.hb-google-plus:hover:after {
+  background: transparent;
+  border-color: #db514f;
+  color: #db514f; }
+
+/* google-plus inverts */
+/* line 460, ../sass/base/_hexagons.scss */
+.hb-google-plus-inv, .social-media-links #google-plus-icon,
+.hb-google-plus-inv:after,
+.social-media-links #google-plus-icon:after,
+.hb-google-plus-inv:before,
+.social-media-links #google-plus-icon:before {
+  background: transparent;
+  border-color: #db514f;
+  color: #db514f; }
+
+/* line 467, ../sass/base/_hexagons.scss */
+.hb-google-plus-inv:hover, .social-media-links #google-plus-icon:hover,
+.hb-google-plus-inv:hover:after,
+.social-media-links #google-plus-icon:hover:after,
+.hb-google-plus-inv:hover:before,
+.social-media-links #google-plus-icon:hover:before {
+  background: #db514f;
+  border-color: #db514f;
+  color: #ffffff; }
+
+/* 6.3 - Google Plus End
+-------------------------------------------------*/
+/* 6.4 - Youtube
+-------------------------------------------------*/
+/* line 480, ../sass/base/_hexagons.scss */
+.hb-youtube,
+.hb-youtube:before,
+.hb-youtube:after {
+  background: #cc181e;
+  border-color: #cc181e;
+  color: #ffffff; }
+
+/* line 487, ../sass/base/_hexagons.scss */
+.hb-youtube:hover,
+.hb-youtube:hover:before,
+.hb-youtube:hover:after {
+  background: transparent;
+  border-color: #cc181e;
+  color: #cc181e; }
+
+/* youtube inverts */
+/* line 496, ../sass/base/_hexagons.scss */
+.hb-youtube-inv,
+.hb-youtube-inv:after,
+.hb-youtube-inv:before {
+  background: transparent;
+  border-color: #cc181e;
+  color: #cc181e; }
+
+/* line 503, ../sass/base/_hexagons.scss */
+.hb-youtube-inv:hover,
+.hb-youtube-inv:hover:after,
+.hb-youtube-inv:hover:before {
+  background: #cc181e;
+  border-color: #cc181e;
+  color: #ffffff; }
+
+/* 6.4 - Youtube End
+-------------------------------------------------*/
+/* 6.5 - Linkedin
+-------------------------------------------------*/
+/* line 515, ../sass/base/_hexagons.scss */
+.hb-linkedin,
+.hb-linkedin:before,
+.hb-linkedin:after {
+  background: #0077b5;
+  border-color: #0077b5;
+  color: #ffffff; }
+
+/* line 522, ../sass/base/_hexagons.scss */
+.hb-linkedin:hover,
+.hb-linkedin:hover:before,
+.hb-linkedin:hover:after {
+  background: transparent;
+  border-color: #0077b5;
+  color: #0077b5; }
+
+/* linkedin inverts */
+/* line 531, ../sass/base/_hexagons.scss */
+.hb-linkedin-inv, .social-media-links #linkedIn-icon,
+.hb-linkedin-inv:after,
+.social-media-links #linkedIn-icon:after,
+.hb-linkedin-inv:before,
+.social-media-links #linkedIn-icon:before {
+  background: transparent;
+  border-color: #0077b5;
+  color: #0077b5; }
+
+/* line 538, ../sass/base/_hexagons.scss */
+.hb-linkedin-inv:hover, .social-media-links #linkedIn-icon:hover,
+.hb-linkedin-inv:hover:after,
+.social-media-links #linkedIn-icon:hover:after,
+.hb-linkedin-inv:hover:before,
+.social-media-links #linkedIn-icon:hover:before {
+  background: #0077b5;
+  border-color: #0077b5;
+  color: #ffffff; }
+
+/* 6.5 - Linkedin End
+-------------------------------------------------*/
+/* 6.6 - Tumblr
+-------------------------------------------------*/
+/* line 553, ../sass/base/_hexagons.scss */
+.hb-tumblr,
+.hb-tumblr:before,
+.hb-tumblr:after {
+  background: #2c4762;
+  border-color: #2c4762;
+  color: #ffffff; }
+
+/* line 561, ../sass/base/_hexagons.scss */
+.hb-tumblr:hover,
+.hb-tumblr:hover:before,
+.hb-tumblr:hover:after {
+  background: transparent;
+  border-color: #2c4762;
+  color: #2c4762; }
+
+/* Tumblr inverts */
+/* line 570, ../sass/base/_hexagons.scss */
+.hb-tumblr-inv,
+.hb-tumblr-inv:after,
+.hb-tumblr-inv:before {
+  background: transparent;
+  border-color: #2c4762;
+  color: #2c4762; }
+
+/* line 577, ../sass/base/_hexagons.scss */
+.hb-tumblr-inv:hover,
+.hb-tumblr-inv:hover:after,
+.hb-tumblr-inv:hover:before {
+  background: #2c4762;
+  border-color: #2c4762;
+  color: #ffffff; }
+
+/* 6.6 - Tumblr End
+-------------------------------------------------*/
+/* 6.7 - RSS
+-------------------------------------------------*/
+/* line 591, ../sass/base/_hexagons.scss */
+.hb-rss,
+.hb-rss:before,
+.hb-rss:after {
+  background: #da5700;
+  border-color: #da5700;
+  color: #ffffff; }
+
+/* line 599, ../sass/base/_hexagons.scss */
+.hb-rss:hover,
+.hb-rss:hover:before,
+.hb-rss:hover:after {
+  background: transparent;
+  border-color: #da5700;
+  color: #da5700; }
+
+/* rss inverts */
+/* line 608, ../sass/base/_hexagons.scss */
+.hb-rss-inv,
+.hb-rss-inv:after,
+.hb-rss-inv:before {
+  background: transparent;
+  border-color: #da5700;
+  color: #da5700; }
+
+/* line 616, ../sass/base/_hexagons.scss */
+.hb-rss-inv:hover,
+.hb-rss-inv:hover:after,
+.hb-rss-inv:hover:before {
+  background: #da5700;
+  border-color: #da5700;
+  color: #ffffff; }
+
+/* 6.7 - RSS End
+-------------------------------------------------*/
+/* 6.8 - Pinterest
+-------------------------------------------------*/
+/* line 631, ../sass/base/_hexagons.scss */
+.hb-pinterest,
+.hb-pinterest:before,
+.hb-pinterest:after {
+  background: #da232a;
+  border-color: #da232a;
+  color: #ffffff; }
+
+/* line 639, ../sass/base/_hexagons.scss */
+.hb-pinterest:hover,
+.hb-pinterest:hover:before,
+.hb-pinterest:hover:after {
+  background: transparent;
+  border-color: #da232a;
+  color: #da232a; }
+
+/* Pinterest inverts */
+/* line 648, ../sass/base/_hexagons.scss */
+.hb-pinterest-inv,
+.hb-pinterest-inv:after,
+.hb-pinterest-inv:before {
+  background: transparent;
+  border-color: #da232a;
+  color: #da232a; }
+
+/* line 656, ../sass/base/_hexagons.scss */
+.hb-pinterest-inv:hover,
+.hb-pinterest-inv:hover:after,
+.hb-pinterest-inv:hover:before {
+  background: #da232a;
+  border-color: #da232a;
+  color: #ffffff; }
+
+/* 6.8 - Pinterest End
+-------------------------------------------------*/
+/* 6.9 - Vimeo
+-------------------------------------------------*/
+/* line 671, ../sass/base/_hexagons.scss */
+.hb-vimeo,
+.hb-vimeo:before,
+.hb-vimeo:after {
+  background: #20b9eb;
+  border-color: #20b9eb;
+  color: #ffffff; }
+
+/* line 678, ../sass/base/_hexagons.scss */
+.hb-vimeo:hover,
+.hb-vimeo:hover:before,
+.hb-vimeo:hover:after {
+  background: transparent;
+  border-color: #20b9eb;
+  color: #20b9eb; }
+
+/* vimeo inverts */
+/* line 687, ../sass/base/_hexagons.scss */
+.hb-vimeo-inv,
+.hb-vimeo-inv:after,
+.hb-vimeo-inv:before {
+  background: transparent;
+  border-color: #20b9eb;
+  color: #20b9eb; }
+
+/* line 695, ../sass/base/_hexagons.scss */
+.hb-vimeo-inv:hover,
+.hb-vimeo-inv:hover:after,
+.hb-vimeo-inv:hover:before {
+  background: #20b9eb;
+  border-color: #20b9eb;
+  color: #ffffff; }
+
+/* 6.9 - Vimeo End
+-------------------------------------------------*/
+/* 6.10 - Github
+-------------------------------------------------*/
+/* line 709, ../sass/base/_hexagons.scss */
+.hb-github,
+.hb-github:before,
+.hb-github:after {
+  background: #373a3c;
+  border-color: #373a3c;
+  color: #ffffff; }
+
+/* line 717, ../sass/base/_hexagons.scss */
+.hb-github:hover,
+.hb-github:hover:before,
+.hb-github:hover:after {
+  background: transparent;
+  border-color: #373a3c;
+  color: #373a3c; }
+
+/* github inverts */
+/* line 726, ../sass/base/_hexagons.scss */
+.hb-github-inv, .social-media-links #github-icon,
+.hb-github-inv:after,
+.social-media-links #github-icon:after,
+.hb-github-inv:before,
+.social-media-links #github-icon:before {
+  background: transparent;
+  border-color: #373a3c;
+  color: #373a3c; }
+
+/* line 733, ../sass/base/_hexagons.scss */
+.hb-github-inv:hover, .social-media-links #github-icon:hover,
+.hb-github-inv:hover:after,
+.social-media-links #github-icon:hover:after,
+.hb-github-inv:hover:before,
+.social-media-links #github-icon:hover:before {
+  background: #373a3c;
+  border-color: #373a3c;
+  color: #ffffff; }
+
+/* 6.10 - Github End
+-------------------------------------------------*/
+/* 6.11 - Flickr
+-------------------------------------------------*/
+/* line 747, ../sass/base/_hexagons.scss */
+.hb-flickr,
+.hb-flickr:before,
+.hb-flickr:after {
+  background: #ff1981;
+  border-color: #ff1981;
+  color: #ffffff; }
+
+/* line 755, ../sass/base/_hexagons.scss */
+.hb-flickr:hover,
+.hb-flickr:hover:before,
+.hb-flickr:hover:after {
+  background: transparent;
+  border-color: #ff1981;
+  color: #ff1981; }
+
+/* flickr inverts */
+/* line 764, ../sass/base/_hexagons.scss */
+.hb-flickr-inv,
+.hb-flickr-inv:after,
+.hb-flickr-inv:before {
+  background: transparent;
+  border-color: #ff1981;
+  color: #ff1981; }
+
+/* line 771, ../sass/base/_hexagons.scss */
+.hb-flickr-inv:hover,
+.hb-flickr-inv:hover:after,
+.hb-flickr-inv:hover:before {
+  background: #ff1981;
+  border-color: #ff1981;
+  color: #ffffff; }
+
+/* 6.11 - Flickr End
+-------------------------------------------------*/
+/* 6.12 - Dropbox
+-------------------------------------------------*/
+/* line 785, ../sass/base/_hexagons.scss */
+.hb-dropbox,
+.hb-dropbox:before,
+.hb-dropbox:after {
+  background: #007ee5;
+  border-color: #007ee5;
+  color: #ffffff; }
+
+/* line 793, ../sass/base/_hexagons.scss */
+.hb-dropbox:hover,
+.hb-dropbox:hover:before,
+.hb-dropbox:hover:after {
+  background: transparent;
+  border-color: #007ee5;
+  color: #007ee5; }
+
+/* dropbox inverts */
+/* line 802, ../sass/base/_hexagons.scss */
+.hb-dropbox-inv,
+.hb-dropbox-inv:after,
+.hb-dropbox-inv:before {
+  background: transparent;
+  border-color: #007ee5;
+  color: #007ee5; }
+
+/* line 809, ../sass/base/_hexagons.scss */
+.hb-dropbox-inv:hover,
+.hb-dropbox-inv:hover:after,
+.hb-dropbox-inv:hover:before {
+  background: #007ee5;
+  border-color: #007ee5;
+  color: #ffffff; }
+
+/* 6.12 - Dropbox End
+-------------------------------------------------*/
+/* 6.13 -  Xing
+-------------------------------------------------*/
+/* line 823, ../sass/base/_hexagons.scss */
+.hb-xing,
+.hb-xing:before,
+.hb-xing:after {
+  background: #006467;
+  border-color: #006467;
+  color: #ffffff; }
+
+/* line 831, ../sass/base/_hexagons.scss */
+.hb-xing:hover,
+.hb-xing:hover:before,
+.hb-xing:hover:after {
+  background: transparent;
+  border-color: #006467;
+  color: #006467; }
+
+/* xing inverts */
+/* line 840, ../sass/base/_hexagons.scss */
+.hb-xing-inv,
+.hb-xing-inv:after,
+.hb-xing-inv:before {
+  background: transparent;
+  border-color: #006467;
+  color: #006467; }
+
+/* line 847, ../sass/base/_hexagons.scss */
+.hb-xing-inv:hover,
+.hb-xing-inv:hover:after,
+.hb-xing-inv:hover:before {
+  background: #006467;
+  border-color: #006467;
+  color: #ffffff; }
+
+/* 6.13 -  Xing End
+-------------------------------------------------*/
+/* 6.14 - Skype
+-------------------------------------------------*/
+/* line 860, ../sass/base/_hexagons.scss */
+.hb-skype,
+.hb-skype:before,
+.hb-skype:after {
+  background: #00aceb;
+  border-color: #00aceb;
+  color: #ffffff; }
+
+/* line 868, ../sass/base/_hexagons.scss */
+.hb-skype:hover,
+.hb-skype:hover:before,
+.hb-skype:hover:after {
+  background: transparent;
+  border-color: #00aceb;
+  color: #00aceb; }
+
+/* skype inverts */
+/* line 877, ../sass/base/_hexagons.scss */
+.hb-skype-inv,
+.hb-skype-inv:after,
+.hb-skype-inv:before {
+  background: transparent;
+  border-color: #00aceb;
+  color: #00aceb; }
+
+/* line 884, ../sass/base/_hexagons.scss */
+.hb-skype-inv:hover,
+.hb-skype-inv:hover:after,
+.hb-skype-inv:hover:before {
+  background: #00aceb;
+  border-color: #00aceb;
+  color: #ffffff; }
+
+/* 6.14 - Skype End
+-------------------------------------------------*/
+/* 6.15 - dribbble
+-------------------------------------------------*/
+/* line 898, ../sass/base/_hexagons.scss */
+.hb-dribbble,
+.hb-dribbble:before,
+.hb-dribbble:after {
+  background: #ea4c89;
+  border-color: #ea4c89;
+  color: #ffffff; }
+
+/* line 906, ../sass/base/_hexagons.scss */
+.hb-dribbble:hover,
+.hb-dribbble:hover:before,
+.hb-dribbble:hover:after {
+  background: transparent;
+  border-color: #ea4c89;
+  color: #ea4c89; }
+
+/* dribbble inverts */
+/* line 915, ../sass/base/_hexagons.scss */
+.hb-dribbble-inv,
+.hb-dribbble-inv:after,
+.hb-dribbble-inv:before {
+  background: transparent;
+  border-color: #ea4c89;
+  color: #ea4c89; }
+
+/* line 922, ../sass/base/_hexagons.scss */
+.hb-dribbble-inv:hover,
+.hb-dribbble-inv:hover:after,
+.hb-dribbble-inv:hover:before {
+  background: #ea4c89;
+  border-color: #ea4c89;
+  color: #ffffff; }
+
+/* 6.15 - dribbble End
+-------------------------------------------------*/
+/* 6.16 - tencent-weibo
+-------------------------------------------------*/
+/* line 936, ../sass/base/_hexagons.scss */
+.hb-tencent-weibo,
+.hb-tencent-weibo:before,
+.hb-tencent-weibo:after {
+  background: #20B8E5;
+  border-color: #20B8E5;
+  color: #ffffff; }
+
+/* line 944, ../sass/base/_hexagons.scss */
+.hb-tencent-weibo:hover,
+.hb-tencent-weibo:hover:before,
+.hb-tencent-weibo:hover:after {
+  background: transparent;
+  border-color: #20B8E5;
+  color: #20B8E5; }
+
+/* tencent-weibo inverts */
+/* line 954, ../sass/base/_hexagons.scss */
+.hb-tencent-weibo-inv,
+.hb-tencent-weibo-inv:after,
+.hb-tencent-weibo-inv:before {
+  background: transparent;
+  border-color: #20B8E5;
+  color: #20B8E5; }
+
+/* line 961, ../sass/base/_hexagons.scss */
+.hb-tencent-weibo-inv:hover,
+.hb-tencent-weibo-inv:hover:after,
+.hb-tencent-weibo-inv:hover:before {
+  background: #20B8E5;
+  border-color: #20B8E5;
+  color: #ffffff; }
+
+/* 6.16 - tencent-weibo End
+-------------------------------------------------*/
 /** 
   * @file _html.scss
   * This file contains styles for each of the base HTML elements 
@@ -141,7 +1100,7 @@ a {
     transition: background-color 0.3s;
     -webkit-transition: border-radius 0.3s;
     transition: border-radius 0.3s; }
-    /* line 19, ../sass/_mixins.scss */
+    /* line 27, ../sass/_mixins.scss */
     a.button:hover {
       background-color: #0472A2;
       color: #fff;
@@ -170,7 +1129,7 @@ input[type="submit"] {
   transition: background-color 0.3s;
   -webkit-transition: border-radius 0.3s;
   transition: border-radius 0.3s; }
-  /* line 19, ../sass/_mixins.scss */
+  /* line 27, ../sass/_mixins.scss */
   input[type="submit"]:hover {
     background-color: #0472A2;
     color: #fff;
@@ -2566,6 +3525,28 @@ footer {
 /* line 596, ../sass/fontawesome/_icons.scss */
 .fa-medium:before {
   content: ""; }
+
+/* line 2, ../sass/components/_footer.scss */
+.social-media-links {
+  float: right; }
+  /* line 10, ../sass/components/_footer.scss */
+  .social-media-links #twitter-icon {
+    color: #00aced; }
+    /* line 14, ../sass/components/_footer.scss */
+    .social-media-links #twitter-icon:hover {
+      color: #fff; }
+  /* line 21, ../sass/components/_footer.scss */
+  .social-media-links #github-icon:hover {
+    color: #fff; }
+  /* line 26, ../sass/components/_footer.scss */
+  .social-media-links #google-plus-icon {
+    color: #dd4b39; }
+  /* line 31, ../sass/components/_footer.scss */
+  .social-media-links #linkedIn-icon {
+    color: #007bb6; }
+    /* line 35, ../sass/components/_footer.scss */
+    .social-media-links #linkedIn-icon:hover {
+      color: #fff; }
 
 /* line 3, ../sass/components/_header.scss */
 header #logo img {

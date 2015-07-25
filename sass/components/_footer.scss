@@ -1,0 +1,39 @@
+//see ../base/_hexagons.scss for class information
+.social-media-links {
+	float: right;
+
+	.social-media-link { //NOT plural
+		@extend .hb;
+		@extend .hb-xs;
+	}
+
+	#twitter-icon {
+		@extend .hb-twitter-inv;
+		color: $twitter;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	#github-icon {
+		@extend .hb-github-inv;
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	#google-plus-icon {
+		@extend .hb-google-plus-inv;
+		color: $googlePlus;
+	}
+
+	#linkedIn-icon {
+		@extend .hb-linkedin-inv;
+		color: $linkedIn;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+}

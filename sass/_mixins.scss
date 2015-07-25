@@ -1,3 +1,11 @@
+@mixin box-sizing($value: border-box) {
+	-webkit-box-sizing: $value;
+	-moz-box-sizing: $value;
+	-o-box-sizing: $value;
+	-ms-box-sizing: $value;
+	box-sizing: $value;
+}
+
 @mixin transition($property, $time) {
 	-webkit-transition: $property $time;
 	transition: $property $time;
