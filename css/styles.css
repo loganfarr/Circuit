@@ -1204,23 +1204,22 @@ footer {
   padding-top: 1.69492%; }
   /* line 35, ../sass/base/_layout.scss */
   #header-wrapper header nav {
-    width: 49.15254%;
-    float: left;
+    width: 431px;
     display: block;
     margin-right: auto;
     margin-left: auto; }
 
-/* line 45, ../sass/base/_layout.scss */
+/* line 43, ../sass/base/_layout.scss */
 #main-wrapper {
   margin-top: 25px; }
-  /* line 47, ../sass/base/_layout.scss */
+  /* line 45, ../sass/base/_layout.scss */
   #main-wrapper #main-content {
     padding-top: 25px; }
 
-/* line 52, ../sass/base/_layout.scss */
+/* line 50, ../sass/base/_layout.scss */
 #footer-wrapper {
   margin-top: 25px; }
-  /* line 55, ../sass/base/_layout.scss */
+  /* line 53, ../sass/base/_layout.scss */
   #footer-wrapper footer {
     padding-top: 25px; }
 
