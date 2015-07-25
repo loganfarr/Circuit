@@ -69,6 +69,37 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
+/* line 2, ../sass/base/_common.scss */
+.page-title {
+  margin-top: 0; }
+
+/* line 6, ../sass/base/_common.scss */
+.messages {
+  width: 90%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border: 5px solid;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px; }
+  /* line 14, ../sass/base/_common.scss */
+  .messages.status {
+    border-color: #00B84A;
+    background-color: #a7f6c7; }
+  /* line 19, ../sass/base/_common.scss */
+  .messages.error {
+    border-color: #FF2424;
+    background-color: #ff8282; }
+  /* line 24, ../sass/base/_common.scss */
+  .messages.warning {
+    border-color: #FFCC24;
+    background-color: #ffedb2; }
+
 /* ---------------------------------------------------------------------- 
 * Product Name: CSS3 Hexagon Buttons
 * Product URI: http://shariarbd.com/demo/css3-hexagon-buttons/
@@ -1193,33 +1224,6 @@ footer {
   /* line 53, ../sass/base/_layout.scss */
   #footer-wrapper footer {
     padding-top: 25px; }
-
-/* line 2, ../sass/base/_temp.scss */
-.messages {
-  width: 90%;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  border: 5px solid;
-  text-align: center;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 10px; }
-  /* line 10, ../sass/base/_temp.scss */
-  .messages.status {
-    border-color: #00B84A;
-    background-color: #a7f6c7; }
-  /* line 15, ../sass/base/_temp.scss */
-  .messages.error {
-    border-color: #FF2424;
-    background-color: #ff8282; }
-  /* line 20, ../sass/base/_temp.scss */
-  .messages.warning {
-    border-color: #FFCC24;
-    background-color: #ffedb2; }
 
 /*!
  *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
