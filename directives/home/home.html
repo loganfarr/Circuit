@@ -1,4 +1,16 @@
 <div id="home">
 	<h1 class="page-title" style="text-align: center;">Logan Farr</h1>
 	<h2 style="text-align: center;">Web Developer, Programmer, Student</h2>
+
+	<div id="projects">
+		<table>
+			<thead><th>Title</th><th>Platform</th></thead>
+			<tbody>
+				<tr ng-repeat="project in projects">
+					<td>{{project.title}}</td>
+					<td>{{project.platform}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 </div>
