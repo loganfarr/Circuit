@@ -39,6 +39,7 @@
 				templateUrl: "directives/styleguide/styleguide.html",
 				controller: "StyleGuideController"
 			})
+			.when("/login", {redirectTo:"http://backend.loganfarr.com/user"})
 			.otherwise({redirectTo:"/"});
 
 		$compileProvider.debugInfoEnabled(false);

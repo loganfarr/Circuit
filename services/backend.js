@@ -1,5 +1,5 @@
 (function() {
-	var backend = function($http, $q) {
+	var backend = function($http, $q, $log) {
 		var fetchData = function(url) {
 			return $http.get(url)
 						.then(
@@ -24,14 +24,22 @@
 		};
 
 		var getRecentProjects = function() {
-			// return $http.get("http://backend.loganfarr.com/recent-portfolio.json");;;
-			// $log.info("Getting recent projects");
 			// return fetchData("http://backend.loganfarr.com/recent-portfolio.json");
 
-			return $http.get("http://backend.loganfarr.com/recent-portfolio")
-						.then(function(response) {
-							return response.data;
-						});
+			var deferred = $q.defer();
+
+			$http.get("http://backend.loganfarr.com/recent-portfolio").then(
+				function(response) {
+					$log.info("backend data: " + JSON.stringify(response.data));
+					return deferred.resolve(response.data);
+				},
+				function(response) {
+					$log.info("backend response: " + response);
+					deferred.reject();
+				}
+			);
+
+			return deferred.promise;
 		};
 
 		var getProjects = function() {
