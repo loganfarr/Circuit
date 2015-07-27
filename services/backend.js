@@ -30,11 +30,9 @@
 
 			$http.get("http://backend.loganfarr.com/recent-portfolio").then(
 				function(response) {
-					$log.info("backend data: " + JSON.stringify(response.data));
 					return deferred.resolve(response.data);
 				},
 				function(response) {
-					$log.info("backend response: " + response);
 					deferred.reject();
 				}
 			);

@@ -2,17 +2,22 @@
 	<h1 class="page-title" style="text-align: center;">Logan Farr</h1>
 	<h2 style="text-align: center;">Web Developer, Programmer, Student</h2>
 
-	{{ recentProjects }}
+	{{ recentProjects.projects }}
 
 	<div id="projects">
-		<table>
-			<thead><th>Title</th><th>Platform</th></thead>
-			<tbody>
-				<tr ng-repeat="project in projects">
-					<td>{{project.title}}</td>
-					<td>{{project.platform}}</td>
-				</tr>
-			</tbody>
-		</table>
+		<div ng-repeat="project in recentProjects.projects">
+			<div class="project-image">
+				<img ng-src="{{project.Image.src}}" alt="{{project.Image.alt}}" />
+			</div>
+			<div class="project-title">
+				<h3>{{project.title}}</h3>
+			</div>
+			<div class="project-features">
+				{{project.features}}
+			</div>
+			<div class="project-read-more read-more">
+				<a href="/#/projects/{{project.title}}">Read More</a>
+			</div>
+		</div>
 	</div>
 </div>
