@@ -1,0 +1,12 @@
+#recent-projects {
+	.project {
+		.project-image {
+			@include hexagon($blue);
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}	
+}

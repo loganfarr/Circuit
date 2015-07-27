@@ -4,10 +4,12 @@
 
 	{{ recentProjects.projects }}
 
-	<div id="projects">
-		<div ng-repeat="project in recentProjects.projects">
-			<div class="project-image">
-				<img ng-src="{{project.Image.src}}" alt="{{project.Image.alt}}" />
+	<div id="recent-projects">
+		<div class="project" ng-repeat="project in recentProjects.projects">
+			<div class="project-image hex-container">
+				<div class="hex-inner-1">
+					<div class="hex-inner-2" ng-style="{'background-image': 'url(http://placekitten.com/400/400)'}"></div>
+				</div>
 			</div>
 			<div class="project-title">
 				<h3>{{project.title}}</h3>
@@ -18,6 +20,12 @@
 			<div class="project-read-more read-more">
 				<a href="/#/projects/{{project.title}}">Read More</a>
 			</div>
+		</div>
+	</div>
+
+	<div id="recentPosts">
+		<div class="blog-post" ng-repeat="post in recentPosts.posts">
+			
 		</div>
 	</div>
 </div>
