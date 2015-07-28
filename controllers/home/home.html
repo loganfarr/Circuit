@@ -8,7 +8,7 @@
 		<div class="project" ng-repeat="project in recentProjects.projects">
 			<div class="project-image hex-container">
 				<div class="hex-inner-1">
-					<div class="hex-inner-2" ng-style="{'background-image': 'url(http://placekitten.com/400/400)'}"></div>
+					<div class="hex-inner-2" ng-style="{'background-image': 'url({{project.Image.src}})'}"></div>
 				</div>
 			</div>
 			<div class="project-title">
