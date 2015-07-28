@@ -6,20 +6,17 @@
 
 	<div id="recent-projects">
 		<div class="project" ng-repeat="project in recentProjects.projects">
-			<div class="project-image hex-container">
-				<div class="hex-inner-1">
-					<div class="hex-inner-2" ng-style="{'background-image': 'url({{project.Image.src}})'}"></div>
+			<a href="/#/projects/{{project.title}}">
+				<div class="project-image hex-container">
+					<div class="hex-inner-1">
+						<div class="hex-inner-2" ng-style="{'background-image': 'url({{project.image.src}})'}">
+							<div class="project-title">
+								<h3>{{project.title}}</h3>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="project-title">
-				<h3>{{project.title}}</h3>
-			</div>
-			<div class="project-features">
-				{{project.features}}
-			</div>
-			<div class="project-read-more read-more">
-				<a href="/#/projects/{{project.title}}">Read More</a>
-			</div>
+			</a>
 		</div>
 	</div>
 

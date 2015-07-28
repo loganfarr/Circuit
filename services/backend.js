@@ -47,6 +47,10 @@
 			return fetchData("http://backend.loganfarr.com/portfolio");
 		};
 
+		var getProject = function(name) {
+			return fetchData("htpt://backend.loganfarr.com/portfolio/" + name);
+		}
+
 		var getRecentBlogPosts = function() {
 			// return $http.get("http://backend.loganfarr.com/recent-blog.json")
 			// 			.then(function(response) { return response.data; });
@@ -64,6 +68,7 @@
 		return {
 			getRecentProjects: 	getRecentProjects,
 			getProjects: 		getProjects,
+			getProject:         getProject,
 			getRecentBlogPosts: getRecentBlogPosts,
 			getBlogPosts: 		getBlogPosts
 		};

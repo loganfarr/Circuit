@@ -1,11 +1,33 @@
 #recent-projects {
+	margin-top: 30px;
+
 	.project {
+		float: left;
+
 		.project-image {
-			@include hexagon($blue);
+			@include hexagon-image;
 
 			img {
 				width: 100%;
 				height: auto;
+			}
+
+			//Styles for the title positioning
+			.hex-inner-2 {
+				position: relative;
+
+				.project-title {
+					position: absolute;
+					top: 130px;
+					text-align: center;
+					margin: 10px;
+
+					h3 {
+						color: #fff;
+						text-shadow: 1px 1px 1px #333;
+						line-height: 40px;
+					}
+				}
 			}
 		}
 	}	
