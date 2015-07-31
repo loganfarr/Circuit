@@ -9,7 +9,7 @@
 	$url = "http://dev.loganfarr.com";
 
 	checkFile("../cache/projects.json", "$url/portfolio");
-	checkFile("../cache/recentProjects.json", "$url/recent-portfolio");
+	checkFile("../cache/recent-portfolio.json", "$url/recent-portfolio");
 	checkFile("../cache/blog.json", "$url/blog");
-	checkFile("../cache/recentBlog.json", "$url/recent-blog");
+	checkFile("../cache/recent-blog.json", "$url/recent-blog");
 ?>
