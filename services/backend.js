@@ -6,20 +6,20 @@
 
 			var cacheUrl = cacheDomain + url + ".json";
 
-			var request = new XMLHttpRequest();
-
-			console.log(cacheUrl);
-			request.open('HEAD', cacheUrl, false);
-			request.send();
-
 			var dataUrl;
 
-			if(request.status == 200) {
-				dataUrl = cacheUrl;
-			}
-			else {
-				dataUrl = domain + url;
-			}
+			$http.get(cacheUrl)
+				 .then(
+				 	//Success Function
+				 	function(response){
+				 		console.log(response);
+				 		dataUrl = cacheUrl;
+				 	},
+				 	//Error function
+				 	function(response){
+				 		console.log(response);
+				 		dataUrl = domain + url;
+				 	});
 
 			$http.get(dataUrl)
 				.then(
@@ -36,7 +36,8 @@
 					},
 					//Error function
 					function(response) {
-						$log.error("Error function fired")
+						$log.error("Error function fired");
+						$log.info(response);
 						//Something went wrong
 						return $q.reject(response.data);
 					}
