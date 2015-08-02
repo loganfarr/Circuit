@@ -13,7 +13,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -34,38 +34,38 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline; }
 
-/* line 22, ../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1; }
 
-/* line 24, ../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none; }
 
-/* line 26, ../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 28, ../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
-/* line 30, ../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none; }
-  /* line 103, ../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+  /* line 103, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
   q:before, q:after, blockquote:before, blockquote:after {
     content: "";
     content: none; }
 
-/* line 32, ../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none; }
 
-/* line 116, ../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
@@ -1191,7 +1191,7 @@ footer {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto; }
-  /* line 12, ../../../.rvm/gems/ruby-2.2.1/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
   header:after,
   #main-content:after,
   footer:after {
@@ -3560,6 +3560,59 @@ footer {
 /* line 596, ../sass/fontawesome/_icons.scss */
 .fa-medium:before {
   content: ""; }
+
+/* line 2, ../sass/components/_blog.scss */
+#blog .post {
+  width: 33%;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 30px; }
+  /* line 9, ../sass/components/_blog.scss */
+  #blog .post .post-image img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px; }
+  /* line 15, ../sass/components/_blog.scss */
+  #blog .post .post-body {
+    padding: 25px;
+    padding-top: 110px;
+    margin-top: -100px;
+    border: 1px solid #ccc; }
+    /* line 21, ../sass/components/_blog.scss */
+    #blog .post .post-body .post-title {
+      text-align: center; }
+  /* line 26, ../sass/components/_blog.scss */
+  #blog .post .post-read-more {
+    text-align: center; }
+    /* line 29, ../sass/components/_blog.scss */
+    #blog .post .post-read-more a {
+      background-color: #29abe2;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 15px;
+      display: inline-block;
+      margin: 10px;
+      cursor: pointer;
+      -webkit-transition: background-color 0.3s;
+      transition: background-color 0.3s;
+      -webkit-transition: border-radius 0.3s;
+      transition: border-radius 0.3s; }
+      /* line 33, ../sass/_mixins.scss */
+      #blog .post .post-read-more a:hover {
+        background-color: #0472A2;
+        color: #fff;
+        border-radius: 0; }
+      /* line 32, ../sass/components/_blog.scss */
+      #blog .post .post-read-more a i.fa {
+        margin-right: 10px; }
 
 /* line 2, ../sass/components/_footer.scss */
 .social-media-links {

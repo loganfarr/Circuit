@@ -1,0 +1,38 @@
+#blog {
+	.post {
+		width: 33%;
+		display: inline-block;
+		@include box-sizing(border-box);
+		padding: 30px;
+
+		.post-image {
+			img {
+				@include center-element;
+				@include circle;
+			}
+		}
+
+		.post-body {
+			padding: 25px;
+			padding-top: 110px;
+			margin-top: -100px;
+			border: 1px solid $smoke;
+
+			.post-title {
+				text-align: center;
+			}
+		}
+
+		.post-read-more {
+			text-align: center;
+
+			a {
+				@include button;
+
+				i.fa {
+					margin-right: 10px;
+				}
+			}
+		}
+	}	
+}

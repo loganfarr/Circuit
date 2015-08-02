@@ -77,3 +77,9 @@
 		}
 	}
 }
+
+@mixin circle($width: 200px) {
+	width: $width;
+	height: $width;
+	border-radius: $width / 2; 
+}

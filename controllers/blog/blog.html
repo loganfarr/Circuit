@@ -1,0 +1,18 @@
+<div id="blog">
+	<div class="post clearfix" ng-repeat="post in blog">
+		<div class="post-image">
+			<img ng-src="{{post.image.src}}" />
+		</div>
+
+		<div class="post-body">
+			<div class="post-title">
+				<h3>{{post.title}}</h3>
+			</div>
+				{{post.body}}
+				
+				<div class="post-read-more">
+					<a href="#">Read More <i class="fa fa-arrow-right"></i></a>
+				</div>
+		</div>
+	</div>
+</div>
