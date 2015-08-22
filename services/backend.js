@@ -2,24 +2,7 @@
 	var backend = function($http, $q, $log) {
 		var fetchData = function(url) {
 			var domain = "http://backend.loganfarr.com/";
-			var cacheDomain = "http://dev.loganfarr.com/cache/";
-
-			var cacheUrl = cacheDomain + url + ".json";
-
-			var dataUrl;
-
-			$http.get(cacheUrl)
-				 .then(
-				 	//Success Function
-				 	function(response){
-				 		console.log(response);
-				 		dataUrl = cacheUrl;
-				 	},
-				 	//Error function
-				 	function(response){
-				 		console.log(response);
-				 		dataUrl = domain + url;
-				 	});
+			var dataUrl = domain + url + '.json';
 
 			$http.get(dataUrl)
 				.then(
@@ -53,7 +36,7 @@
 		};
 
 		var getProject = function(name) {
-			return fetchData("portfolio/" + name);
+			// return fetchData("portfolio/" + name);
 		}
 
 		var getRecentBlogPosts = function() {
