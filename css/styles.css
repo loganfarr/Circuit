@@ -70,10 +70,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block; }
 
 /* line 2, ../sass/base/_common.scss */
-.page-title {
-  margin-top: 0; }
+#page-title {
+  margin-top: 0;
+  text-align: center; }
 
-/* line 6, ../sass/base/_common.scss */
+/* line 7, ../sass/base/_common.scss */
 .messages {
   width: 90%;
   display: block;
@@ -87,15 +88,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   padding: 10px; }
-  /* line 14, ../sass/base/_common.scss */
+  /* line 15, ../sass/base/_common.scss */
   .messages.status {
     border-color: #00B84A;
     background-color: #a7f6c7; }
-  /* line 19, ../sass/base/_common.scss */
+  /* line 20, ../sass/base/_common.scss */
   .messages.error {
     border-color: #FF2424;
     background-color: #ff8282; }
-  /* line 24, ../sass/base/_common.scss */
+  /* line 25, ../sass/base/_common.scss */
   .messages.warning {
     border-color: #FFCC24;
     background-color: #ffedb2; }
@@ -1186,14 +1187,14 @@ select {
 
 /* line 20, ../sass/base/_layout.scss */
 header,
-#main-content,
+.container,
 footer {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto; }
   /* line 12, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
   header:after,
-  #main-content:after,
+  .container:after,
   footer:after {
     content: " ";
     display: block;
@@ -3561,7 +3562,14 @@ footer {
 .fa-medium:before {
   content: ""; }
 
-/* line 2, ../sass/components/_blog.scss */
+/* line 1, ../sass/components/_blog.scss */
+#recent-posts {
+  clear: both; }
+  /* line 4, ../sass/components/_blog.scss */
+  #recent-posts h3 {
+    text-align: center; }
+
+/* line 10, ../sass/components/_blog.scss */
 #blog .post {
   width: 33%;
   display: inline-block;
@@ -3571,7 +3579,7 @@ footer {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   padding: 30px; }
-  /* line 9, ../sass/components/_blog.scss */
+  /* line 17, ../sass/components/_blog.scss */
   #blog .post .post-image img {
     display: block;
     margin-right: auto;
@@ -3579,19 +3587,19 @@ footer {
     width: 200px;
     height: 200px;
     border-radius: 100px; }
-  /* line 15, ../sass/components/_blog.scss */
+  /* line 23, ../sass/components/_blog.scss */
   #blog .post .post-body {
     padding: 25px;
     padding-top: 110px;
     margin-top: -100px;
     border: 1px solid #ccc; }
-    /* line 21, ../sass/components/_blog.scss */
+    /* line 29, ../sass/components/_blog.scss */
     #blog .post .post-body .post-title {
       text-align: center; }
-  /* line 26, ../sass/components/_blog.scss */
+  /* line 34, ../sass/components/_blog.scss */
   #blog .post .post-read-more {
     text-align: center; }
-    /* line 29, ../sass/components/_blog.scss */
+    /* line 37, ../sass/components/_blog.scss */
     #blog .post .post-read-more a {
       background-color: #29abe2;
       color: #fff;
@@ -3610,7 +3618,7 @@ footer {
         background-color: #0472A2;
         color: #fff;
         border-radius: 0; }
-      /* line 32, ../sass/components/_blog.scss */
+      /* line 40, ../sass/components/_blog.scss */
       #blog .post .post-read-more a i.fa {
         margin-right: 10px; }
 
@@ -3644,13 +3652,26 @@ header nav ul li {
   header nav ul li a {
     padding: 5px 20px; }
 
+/* line 1, ../sass/components/_home.scss */
+.hero {
+  background: url("../../images/header-bg.png");
+  color: #fff;
+  padding: 300px 200px 200px 200px;
+  margin-top: -100px; }
+  /* line 7, ../sass/components/_home.scss */
+  .hero h1, .hero h2 {
+    color: #fff; }
+
 /* line 1, ../sass/components/_portfolio.scss */
 #recent-projects {
   margin-top: 30px; }
   /* line 4, ../sass/components/_portfolio.scss */
+  #recent-projects h3 {
+    text-align: center; }
+  /* line 8, ../sass/components/_portfolio.scss */
   #recent-projects .project {
     float: left; }
-    /* line 7, ../sass/components/_portfolio.scss */
+    /* line 11, ../sass/components/_portfolio.scss */
     #recent-projects .project .project-image {
       width: 200px;
       height: 400px;
@@ -3687,21 +3708,21 @@ header nav ul li {
             -ms-transform: rotate(-60deg);
             -o-transform: rotate(-60deg);
             transform: rotate(-60deg); }
-      /* line 10, ../sass/components/_portfolio.scss */
+      /* line 14, ../sass/components/_portfolio.scss */
       #recent-projects .project .project-image img {
         width: 100%;
         height: auto; }
-      /* line 16, ../sass/components/_portfolio.scss */
+      /* line 20, ../sass/components/_portfolio.scss */
       #recent-projects .project .project-image .hex-inner-2 {
         position: relative; }
-        /* line 19, ../sass/components/_portfolio.scss */
+        /* line 23, ../sass/components/_portfolio.scss */
         #recent-projects .project .project-image .hex-inner-2 .project-title {
           position: absolute;
           top: 130px;
           text-align: center;
           margin: 10px; }
-          /* line 25, ../sass/components/_portfolio.scss */
-          #recent-projects .project .project-image .hex-inner-2 .project-title h3 {
+          /* line 29, ../sass/components/_portfolio.scss */
+          #recent-projects .project .project-image .hex-inner-2 .project-title h4 {
             color: #fff;
             text-shadow: 1px 1px 1px #333;
             line-height: 40px; }

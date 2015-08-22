@@ -13,6 +13,7 @@
 		};
 
 		backend.getRecentProjects().then(onRecentProjects, onError);
+		backend.getRecentBlogPosts().then(onRecentBlogPosts, onError);
 	};
 
 

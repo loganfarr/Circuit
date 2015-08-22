@@ -1,22 +1,35 @@
-<div id="home">
-	<h1 class="page-title" style="text-align: center;">Logan Farr</h1>
+<div class="hero">
+	<h1 id="page-title">Logan Farr</h1>
 	<h2 style="text-align: center;">Web Developer, Programmer, Student</h2>
-
-	{{ recentProjects.projects }}
-
+</div>
+<div id="home" class="container">
 	<div id="recent-projects">
+		<h3>Recent Projects</h3>
+		{{ recentProjects.projects }}
+
 		<div class="project" ng-repeat="project in recentProjects.projects">
-			<a href="/#/projects/{{project.title}}">
-				<div class="project-image hex-container">
-					<div class="hex-inner-1">
-						<div class="hex-inner-2" ng-style="{'background-image': 'url({{project.image.src}})'}">
+			<div class="project-image hex-container">
+				<div class="hex-inner-1">
+					<div class="hex-inner-2" ng-style="{'background-image': 'url({{project.image.src}})'}">
+						<a href="/#/projects/{{project.title}}">
 							<div class="project-title">
-								<h3>{{project.title}}</h3>
+								<h4>{{project.title}}</h4>
 							</div>
-						</div>
+						</a>
 					</div>
 				</div>
-			</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="recent-posts">
+		{{recentBlogPosts}}
+		<h3>Recent Blog Posts</h3>
+
+		<div class="post" ng-repeat="post in recentBlogPosts">
+			<div class="post-image"><img ng-src="{{post.Image.src}}" /></div>
+			<h4 class="post-title"> {{post.Title}} </h4>
+			<div class="post">{{post.Body}}</div>
 		</div>
 	</div>
 </div>

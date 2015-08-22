@@ -18,7 +18,7 @@ $susy: (
 }
 
 header,
-#main-content,
+.container,
 footer {
 	@include container($defaultContainer);
 }
