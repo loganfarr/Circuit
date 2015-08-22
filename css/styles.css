@@ -101,6 +101,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-color: #FFCC24;
     background-color: #ffedb2; }
 
+/* line 31, ../sass/base/_common.scss */
+.clearfix {
+  overflow: auto; }
+
 /* ---------------------------------------------------------------------- 
 * Product Name: CSS3 Hexagon Buttons
 * Product URI: http://shariarbd.com/demo/css3-hexagon-buttons/
@@ -1095,7 +1099,7 @@ h3 {
 
 /* line 35, ../sass/base/_html.scss */
 h4 {
-  font-size: 1.5em;
+  font-size: 1.75em;
   margin: 0.2em 0; }
 
 /* line 40, ../sass/base/_html.scss */
@@ -3564,12 +3568,31 @@ footer {
 
 /* line 1, ../sass/components/_blog.scss */
 #recent-posts {
-  clear: both; }
-  /* line 4, ../sass/components/_blog.scss */
+  clear: both;
+  padding-top: 100px; }
+  /* line 5, ../sass/components/_blog.scss */
   #recent-posts h3 {
     text-align: center; }
+  /* line 9, ../sass/components/_blog.scss */
+  #recent-posts .post {
+    clear: both;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px; }
+    /* line 16, ../sass/components/_blog.scss */
+    #recent-posts .post .post-image {
+      float: left;
+      margin-right: 50px; }
+      /* line 20, ../sass/components/_blog.scss */
+      #recent-posts .post .post-image img {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px; }
+    /* line 25, ../sass/components/_blog.scss */
+    #recent-posts .post .post-title {
+      margin-bottom: 1em; }
 
-/* line 10, ../sass/components/_blog.scss */
+/* line 34, ../sass/components/_blog.scss */
 #blog .post {
   width: 33%;
   display: inline-block;
@@ -3579,7 +3602,7 @@ footer {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   padding: 30px; }
-  /* line 17, ../sass/components/_blog.scss */
+  /* line 41, ../sass/components/_blog.scss */
   #blog .post .post-image img {
     display: block;
     margin-right: auto;
@@ -3587,19 +3610,19 @@ footer {
     width: 200px;
     height: 200px;
     border-radius: 100px; }
-  /* line 23, ../sass/components/_blog.scss */
+  /* line 47, ../sass/components/_blog.scss */
   #blog .post .post-body {
     padding: 25px;
     padding-top: 110px;
     margin-top: -100px;
     border: 1px solid #ccc; }
-    /* line 29, ../sass/components/_blog.scss */
+    /* line 53, ../sass/components/_blog.scss */
     #blog .post .post-body .post-title {
       text-align: center; }
-  /* line 34, ../sass/components/_blog.scss */
+  /* line 58, ../sass/components/_blog.scss */
   #blog .post .post-read-more {
     text-align: center; }
-    /* line 37, ../sass/components/_blog.scss */
+    /* line 61, ../sass/components/_blog.scss */
     #blog .post .post-read-more a {
       background-color: #29abe2;
       color: #fff;
@@ -3618,7 +3641,7 @@ footer {
         background-color: #0472A2;
         color: #fff;
         border-radius: 0; }
-      /* line 40, ../sass/components/_blog.scss */
+      /* line 64, ../sass/components/_blog.scss */
       #blog .post .post-read-more a i.fa {
         margin-right: 10px; }
 
@@ -3654,24 +3677,39 @@ header nav ul li {
 
 /* line 1, ../sass/components/_home.scss */
 .hero {
-  background: url("../../images/header-bg.png");
+  background: url("../../images/orange-header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #fff;
-  padding: 300px 200px 200px 200px;
-  margin-top: -100px; }
-  /* line 7, ../sass/components/_home.scss */
+  padding: 300px 0px 200px 0px;
+  margin-top: -100px;
+  margin-bottom: -30px;
+  box-shadow: 0px 10px 10px 10px #333; }
+  /* line 11, ../sass/components/_home.scss */
   .hero h1, .hero h2 {
-    color: #fff; }
+    color: #fff;
+    text-shadow: 1px 1px 6px #333; }
 
 /* line 1, ../sass/components/_portfolio.scss */
 #recent-projects {
-  margin-top: 30px; }
-  /* line 4, ../sass/components/_portfolio.scss */
+  margin-top: 30px;
+  background: url("../../images/header-bg.png");
+  color: #fff;
+  padding-top: 100px; }
+  /* line 7, ../sass/components/_portfolio.scss */
   #recent-projects h3 {
-    text-align: center; }
-  /* line 8, ../sass/components/_portfolio.scss */
+    text-align: center;
+    color: #fff; }
+  /* line 12, ../sass/components/_portfolio.scss */
+  #recent-projects > .button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    clear: both; }
+  /* line 17, ../sass/components/_portfolio.scss */
   #recent-projects .project {
     float: left; }
-    /* line 11, ../sass/components/_portfolio.scss */
+    /* line 20, ../sass/components/_portfolio.scss */
     #recent-projects .project .project-image {
       width: 200px;
       height: 400px;
@@ -3708,20 +3746,20 @@ header nav ul li {
             -ms-transform: rotate(-60deg);
             -o-transform: rotate(-60deg);
             transform: rotate(-60deg); }
-      /* line 14, ../sass/components/_portfolio.scss */
+      /* line 23, ../sass/components/_portfolio.scss */
       #recent-projects .project .project-image img {
         width: 100%;
         height: auto; }
-      /* line 20, ../sass/components/_portfolio.scss */
+      /* line 29, ../sass/components/_portfolio.scss */
       #recent-projects .project .project-image .hex-inner-2 {
         position: relative; }
-        /* line 23, ../sass/components/_portfolio.scss */
+        /* line 32, ../sass/components/_portfolio.scss */
         #recent-projects .project .project-image .hex-inner-2 .project-title {
           position: absolute;
-          top: 130px;
+          top: 120px;
           text-align: center;
-          margin: 10px; }
-          /* line 29, ../sass/components/_portfolio.scss */
+          margin: 20px; }
+          /* line 38, ../sass/components/_portfolio.scss */
           #recent-projects .project .project-image .hex-inner-2 .project-title h4 {
             color: #fff;
             text-shadow: 1px 1px 1px #333;
