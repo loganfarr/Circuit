@@ -1,8 +1,32 @@
 #recent-posts {
 	clear: both;
+	padding-top: 100px;
 
 	h3 {
 		text-align: center;
+	}
+
+	.post {
+		clear: both;
+		padding-bottom: 50px;
+		border-bottom: 1px solid $smoke;
+		margin-bottom: 50px;
+
+
+		.post-image {
+			float: left;
+			margin-right: 50px;
+
+			img {
+				@include circle;
+			}
+		}
+
+		.post-title {
+			margin-bottom: 1em;
+		}
+
+		.post-body {}
 	}
 }
 

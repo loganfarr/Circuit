@@ -27,3 +27,7 @@
 		background-color: lighten($lightYellow, 10%);
 	}
 }
+
+.clearfix {
+	overflow: auto;
+}
