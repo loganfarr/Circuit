@@ -1,30 +1,28 @@
 (function() {
 	var backend = function($http, $q, $log) {
 		var fetchData = function(url) {
-			var domain = "http://backend.loganfarr.com/";
-			var dataUrl = domain + url + '.json';
+			url = 'http://backend.loganfarr.com/'+url+'.json';
 
-			$http.get(dataUrl)
-				.then(
-					//Success Function
-					function(response) {
-						$log.info("Success function fired");
-						if(typeof response.data === 'object') {
-							return response.data;
-						}
-						else {
-							//Invalid response
-							return $q.reject(response.data);
-						}
-					},
-					//Error function
-					function(response) {
-						$log.error("Error function fired");
-						$log.info(response);
-						//Something went wrong
-						return $q.reject(response.data);
-					}
-				);
+			return $http.get(url)
+						.then(
+							//Success Function
+							function(response) {
+								$log.info("Success function fired");
+								if(typeof response.data === 'object') {
+									return response.data;
+								}
+								else {
+									//Invalid response
+									return $q.reject(response.data);
+								}
+							},
+							//Error function
+							function(response) {
+								$log.error("Error function fired")
+								//Something went wrong
+								return $q.reject(response.data);
+							}
+						);
 		};
 
 		var getRecentProjects = function() {
