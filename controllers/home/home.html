@@ -1,6 +1,6 @@
 <div class="hero">
 	<h1 id="page-title">Logan Farr</h1>
-	<h2 style="text-align: center;">Web Developer, Programmer, Student</h2>
+	<h2 style="text-align: center;">Web Developer. Programmer. Student.</h2>
 </div>
 <div id="home">
 	<div id="recent-projects">
@@ -32,8 +32,17 @@
 			<div class="post clearfix" ng-repeat="post in recentBlogPosts">
 				<div class="post-image"><img ng-src="{{post.image.src}}" /></div>
 				<h4 class="post-title"> {{post.title}} </h4>
+				<div class="post-date">{{post.post_date}}</div>
 				<div class="post-body">{{post.body}}</div>
+				<a class="" style="float:right;" ng-click="backend.getPost({{post.nid}});">Read Full Post</a>
 			</div>
+
+			<div id="test-post" ng-show="post">
+				<!-- Find a way to be more consistent! -->
+				{{article}}
+			</div>
+
+			<a class="button" style="float: right;" href="/blog">See all Posts</a>
 		</div>
 	</div>
 </div>
