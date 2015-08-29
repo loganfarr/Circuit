@@ -12,7 +12,7 @@
 			$('.error-container').html("<div class='messages error'>Could not fetch the data. <br /><br />More information: <br />"+response+"</div>");
 		};
 
-		var getPost = function(nid) {
+		$scope.getPost = function(nid) {
 			backend.getPost(nid).then(
 				//Success function
 				function(data) {

@@ -34,12 +34,16 @@
 				<h4 class="post-title"> {{post.title}} </h4>
 				<div class="post-date">{{post.post_date}}</div>
 				<div class="post-body">{{post.body}}</div>
-				<a class="" style="float:right;" ng-click="backend.getPost({{post.nid}});">Read Full Post</a>
+				<a class="" style="float:right;" ng-click='getPost(post.nid)'>Read Full Post</a>
 			</div>
 
-			<div id="test-post" ng-show="post">
+			<div id="test-post">
 				<!-- Find a way to be more consistent! -->
 				{{article}}
+				<div class="article-title">{{article.article.title}}</div>
+				<div class="article-image"><img ng-src="{{article.image.src}}" /></div>
+				<div class="article-body">{{article.body}}</div>
+
 			</div>
 
 			<a class="button" style="float: right;" href="/blog">See all Posts</a>
