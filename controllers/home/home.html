@@ -44,7 +44,7 @@
 				
 				<div class="article-title">{{post.title}}</div>
 				<div class="article-image"><img ng-src="{{post.image.src}}" /></div>
-				<div class="article-body" ng-bind-html="post.body"></div>
+				<div class="article-body" ng-bind-html-unsafe="post.body"></div>
 
 			</div>
 
