@@ -37,12 +37,14 @@
 				<a class="" style="float:right;" ng-click='getPost(post.nid)'>Read Full Post</a>
 			</div>
 
-			<div id="test-post">
+			{{article}}
+
+			<div id="test-post" ng-repeat="post in article | limitTo: 1 ">
 				<!-- Find a way to be more consistent! -->
-				{{article}}
-				<div class="article-title">{{article.article.title}}</div>
-				<div class="article-image"><img ng-src="{{article.image.src}}" /></div>
-				<div class="article-body">{{article.body}}</div>
+				
+				<div class="article-title">{{post.title}}</div>
+				<div class="article-image"><img ng-src="{{post.image.src}}" /></div>
+				<div class="article-body" ng-bind-html="post.body"></div>
 
 			</div>
 
