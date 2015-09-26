@@ -6,7 +6,7 @@
 	box-sizing: $value;
 }
 
-@mixin transition($property, $time) {
+@mixin transition($property: all, $time: 0.2s) {
 	-webkit-transition: $property $time;
 	transition: $property $time;
 }
