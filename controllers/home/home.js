@@ -17,10 +17,6 @@
 
 			angular.forEach(data.article, function(article, value) {
 				article.body_trusted = $sce.trustAsHtml(article.body);
-				$log.info("forEach processing");
-				$log.info(JSON.stringify(article));
-				$log.info(value);
-				$log.info(article.body_trusted);
 			});
 		}
 

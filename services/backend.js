@@ -7,7 +7,6 @@
                 .then(
                     //Success Function
                     function(response) {
-                        $log.info("Success function fired");
                         if (typeof response.data === 'object') {
                             return response.data;
                         } else {
@@ -17,8 +16,6 @@
                     },
                     //Error function
                     function(response) {
-                        $log.error("Error function fired")
-                            //Something went wrong
                         return $q.reject(response.data);
                     }
                 );
