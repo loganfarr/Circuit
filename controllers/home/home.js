@@ -13,12 +13,14 @@
 		};
 
 		var onPost = function(data) {
-			$scope.article = data.article[0];
-			$scope.article.body_trusted = $sce.trustAsHtml($scope.article.body);
+
 		}
 
 		$scope.getPost = function(nid) {
-			backend.getPost(nid).then(onPost, onError);
+			backend.getPost(nid).then(function(data) {
+				$scope.article = data.article[0];
+				$scope.article.body_trusted = $sce.trustAsHtml($scope.article.body);
+			}, onError);
 		}
 
 		backend.getRecentProjects().then(onRecentProjects, onError);
