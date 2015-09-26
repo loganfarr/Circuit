@@ -48,6 +48,12 @@
 
 		.post-body {}
 	}
+
+	#single-post {
+		div.article-image img {
+			@include circle;
+		}
+	}
 }
 
 #blog {

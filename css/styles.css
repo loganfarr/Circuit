@@ -1115,18 +1115,22 @@ h5 {
 h6 {
   font-size: 1em; }
 
-/* line 52, ../sass/base/_html.scss */
-p {
-  margin: 20px auto; }
-
 /* line 56, ../sass/base/_html.scss */
+em, i {
+  font-style: italic; }
+
+/* line 60, ../sass/base/_html.scss */
+b, strong {
+  font-weight: bold; }
+
+/* line 64, ../sass/base/_html.scss */
 a {
   color: #29abe2;
   text-decoration: none; }
-  /* line 60, ../sass/base/_html.scss */
+  /* line 68, ../sass/base/_html.scss */
   a:hover {
     color: #0472A2; }
-  /* line 64, ../sass/base/_html.scss */
+  /* line 72, ../sass/base/_html.scss */
   a.button {
     background-color: #29abe2;
     color: #fff;
@@ -1146,13 +1150,13 @@ a {
       color: #fff;
       border-radius: 0; }
 
-/* line 69, ../sass/base/_html.scss */
+/* line 77, ../sass/base/_html.scss */
 input,
 textarea {
   padding: 10px;
   margin: 10px 0; }
 
-/* line 75, ../sass/base/_html.scss */
+/* line 83, ../sass/base/_html.scss */
 input[type="submit"] {
   border: 0;
   background-image: none;
@@ -1175,11 +1179,18 @@ input[type="submit"] {
     color: #fff;
     border-radius: 0; }
 
-/* line 82, ../sass/base/_html.scss */
+/* line 90, ../sass/base/_html.scss */
 select {
   padding: 5px;
   margin: 5px;
   border: 1px solid rgba(169, 169, 169, 0.5); }
+
+/* line 96, ../sass/base/_html.scss */
+ul {
+  padding-left: 1em; }
+  /* line 99, ../sass/base/_html.scss */
+  ul li {
+    list-style-type: circle; }
 
 /*
  * Susy Reference
@@ -1232,6 +1243,27 @@ footer {
   #footer-wrapper footer {
     padding-top: 25px; }
 
+/* line 65, ../sass/base/_layout.scss */
+.column {
+  display: inline-block;
+  vertical-align: top; }
+
+/* line 70, ../sass/base/_layout.scss */
+.col-25 {
+  text-align: center;
+  margin-bottom: 20px; }
+
+@media (min-width: 1200px) {
+  /* line 76, ../sass/base/_layout.scss */
+  .col-25 {
+    width: 24%;
+    margin-right: 1%;
+    text-align: center;
+    margin-bottom: 0; }
+
+  /* line 83, ../sass/base/_layout.scss */
+  .col-75 {
+    width: 74%; } }
 /*!
  *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -3609,8 +3641,13 @@ footer {
     /* line 45, ../sass/components/_blog.scss */
     #recent-posts .post .post-date {
       font-style: italic; }
+  /* line 53, ../sass/components/_blog.scss */
+  #recent-posts #single-post div.article-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px; }
 
-/* line 54, ../sass/components/_blog.scss */
+/* line 60, ../sass/components/_blog.scss */
 #blog .post {
   width: 33%;
   display: inline-block;
@@ -3620,7 +3657,7 @@ footer {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   padding: 30px; }
-  /* line 61, ../sass/components/_blog.scss */
+  /* line 67, ../sass/components/_blog.scss */
   #blog .post .post-image img {
     display: block;
     margin-right: auto;
@@ -3628,19 +3665,19 @@ footer {
     width: 200px;
     height: 200px;
     border-radius: 100px; }
-  /* line 67, ../sass/components/_blog.scss */
+  /* line 73, ../sass/components/_blog.scss */
   #blog .post .post-body {
     padding: 25px;
     padding-top: 110px;
     margin-top: -100px;
     border: 1px solid #ccc; }
-    /* line 73, ../sass/components/_blog.scss */
+    /* line 79, ../sass/components/_blog.scss */
     #blog .post .post-body .post-title {
       text-align: center; }
-  /* line 78, ../sass/components/_blog.scss */
+  /* line 84, ../sass/components/_blog.scss */
   #blog .post .post-read-more {
     text-align: center; }
-    /* line 81, ../sass/components/_blog.scss */
+    /* line 87, ../sass/components/_blog.scss */
     #blog .post .post-read-more a {
       background-color: #29abe2;
       color: #fff;
@@ -3659,7 +3696,7 @@ footer {
         background-color: #0472A2;
         color: #fff;
         border-radius: 0; }
-      /* line 84, ../sass/components/_blog.scss */
+      /* line 90, ../sass/components/_blog.scss */
       #blog .post .post-read-more a i.fa {
         margin-right: 10px; }
 

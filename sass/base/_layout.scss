@@ -60,3 +60,27 @@ footer {
 		padding-top: 25px;
 	}
 }
+
+//Column settings
+.column {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.col-25 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+@include breakpoint($medium) {
+	.col-25 {
+		width: span(24%);
+		margin-right: 1%;
+		text-align: center;
+		margin-bottom: 0;
+	}
+
+	.col-75 {
+		width: span(74%);
+	}
+}

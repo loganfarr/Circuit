@@ -50,7 +50,15 @@ h6 {
 }
 
 p {
-	margin: 20px auto;
+	// margin: 20px auto;
+}
+
+em, i {
+	font-style: italic;
+}
+
+b, strong {
+	font-weight: bold;
 }
 
 a {
@@ -85,3 +93,10 @@ select {
 	border: 1px solid rgba(169, 169, 169, 0.5);
 }
 
+ul {
+	padding-left: 1em;
+
+	li {
+		list-style-type: circle;
+	}
+}
