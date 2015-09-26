@@ -13,11 +13,8 @@
 		};
 
 		var onPost = function(data) {
-			$scope.article = data.article;
-
-			angular.forEach(data.article, function(article, value) {
-				article.body_trusted = $sce.trustAsHtml(article.body);
-			});
+			$scope.article = data.article[0];
+			$scope.article.body_trusted = $sce.trustAsHtml($scope.article.body);
 		}
 
 		$scope.getPost = function(nid) {
