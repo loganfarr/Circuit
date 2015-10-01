@@ -29,23 +29,16 @@
 		<div class="container">
 			<h3>Recent Blog Posts</h3>
 
-			<div class="post clearfix" ng-repeat="post in recentBlogPosts" id="post-{{post.nid}}">
+			<pre>{{recentBlogPosts}}</pre>
+
+			<div class="post clearfix" ng-repeat="post in recentBlogPosts track by post.nid">
 				<div class="post-image"><img ng-src="{{post.image.src}}" /></div>
 				<h4 class="post-title"> {{post.title}} </h4>
 				<div class="post-date">{{post.post_date}}</div>
-				<div class="post-body">{{post.body}}</div>
-				<a class="" style="float:right;" ng-click='getPost(post.nid)'>Read Full Post</a>
+				<div class="post-body" ng-bind-html="post.body">{{post.body}}</div>
+				<a class="" style="float:right;" ng-click='getPost(this, post.nid)' ng-show="!post.shownMore">Read Full Post</a>
+				<a class="" style="float:right;" ng-click='showLess(this, post.nid)' ng-show="post.shownMore">Show Less</a>
 			</div>
-
-			
-				<div class="article-main">
-					<div class="column col-25">
-						<div class="article-image"><img ng-src="{{article.image.src}}" /></div>
-					</div>
-					<div class="column col-75">
-						<div class="article-body" ng-bind-html="article.body_trusted"></div>
-					</div>
-				</div>
 
 			<a class="button" style="float: right;" href="/blog">See all Posts</a>
 		</div>
