@@ -1,0 +1,8 @@
+<div class="hero project" ng-style="{'background-image': 'url(' + project.front_image.src + ')'}">
+    <h1 id="page-title">{{project.title}}</h1>
+    <h2>{{project.date}}</h2>
+</div>
+<div class="container" id="project">
+	<img ng-src="{{project.image.src}}" class="project-image" alt="A Creek Bearing Gifts"/>
+	<div class="project-description" ng-bind-html="project.description"></div>
+</div>
