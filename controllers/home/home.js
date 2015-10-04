@@ -2,12 +2,16 @@
 	var HomeController = function($scope, $routeParams, backend, $log, $q, $http, $sce) {
 		var onRecentProjects = function(data) {
 			$scope.recentProjects = data;
+
+			angular.forEach($scope.recentProjects, function(project) {
+				project.title_encoded = escape(project.title);
+			});
 		};
 
 		var onRecentBlogPosts = function(data) {
 			$scope.recentBlogPosts = data;
 
-			angular.forEach(data, function(post, key) {
+			angular.forEach($scope.recentBlogPosts, function(post) {
 				post.shownMore = false;
 				post.body = $sce.trustAsHtml(post.body);
 			});
@@ -32,9 +36,8 @@
 
 			context.post.shownMore = false;
 
-			backend.getPost(nid).then(function(data) {
-				context.post.body = $sce.trustAsHtml(data.summary);
-			}, onError);
+			// context.post.body = String(context.post.body);
+			// context.post.body = context.post.body.substring(0, 600);
 		}
 
 		backend.getRecentProjects().then(onRecentProjects, onError);

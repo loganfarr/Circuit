@@ -10,8 +10,9 @@
 			<div class="project" ng-repeat="project in recentProjects.projects">
 				<div class="project-image hex-container">
 					<div class="hex-inner-1">
-						<div class="hex-inner-2" ng-style="{'background-image': 'url({{project.image.src}})'}">
-							<a href="/#/projects/{{project.title}}">
+						<div class="hex-inner-2" ng-style="{'background-image': 'url({{project.front_image.src}})'}">
+							<a href="/#/projects/{{project.node_id}}">
+								{{project.title_encoded}}
 								<div class="project-title">
 									<h4>{{project.title}}</h4>
 								</div>
@@ -29,8 +30,6 @@
 		<div class="container">
 			<h3>Recent Blog Posts</h3>
 
-			<pre>{{recentBlogPosts}}</pre>
-
 			<div class="post clearfix" ng-repeat="post in recentBlogPosts track by post.nid">
 				<div class="post-image"><img ng-src="{{post.image.src}}" /></div>
 				<h4 class="post-title"> {{post.title}} </h4>
@@ -40,7 +39,7 @@
 				<a class="" style="float:right;" ng-click='showLess(this, post.nid)' ng-show="post.shownMore">Show Less</a>
 			</div>
 
-			<a class="button" style="float: right;" href="/blog">See all Posts</a>
+			<a class="button" style="float: right;" href="#/blog">See all Posts</a>
 		</div>
 	</div>
 </div>
