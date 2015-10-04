@@ -29,8 +29,8 @@
             return fetchData("portfolio");
         };
 
-        var getProject = function(name) {
-            // return fetchData("portfolio/" + name);
+        var getProject = function(nid) {
+            return fetchData("projects/" + nid);
         }
 
         var getRecentBlogPosts = function() {
