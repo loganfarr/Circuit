@@ -1,17 +1,17 @@
 (function() {
 	var app = angular.module("loganfarr", ["ngRoute"]);
 
-	app.config(function($routeProvider, $compileProvider){
+	app.config(function($routeProvider, $compileProvider, $locationProvider){
 		$routeProvider
 			.when("/", {
 				templateUrl: "controllers/home/home.html",
 				controller: "HomeController"
 			})
-			.when("/portfolio", {
+			.when("/projects", {
 				templateUrl: "controllers/portfolio/portfolio.html",
 				controller: "PortfolioController"
 			})
-			.when("/portfolio/:projectName", {
+			.when("/projects/:projectID", {
 				templateUrl: "controllers/portfolio/project.html",
 				controller: "ProjectController"
 			})
@@ -39,9 +39,14 @@
 				templateUrl: "controllers/styleguide/styleguide.html",
 				controller: "StyleGuideController"
 			})
+			.when("/about", {
+				templateUrl: "controllers/about/about.html",
+				controller: "AboutController"
+			})
 			.when("/login", {redirectTo:"http://backend.loganfarr.com/user"})
 			.otherwise({redirectTo:"/"});
 
 		$compileProvider.debugInfoEnabled(false);
+		// $locationProvider.html5Mode(true);
 	}); 
 }());
