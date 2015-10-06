@@ -41,7 +41,7 @@
             return fetchData("blog");
         };
 
-        var getPost = function(nid) {
+        var getArticle = function(nid) {
             return fetchData("blog/article/" + nid);
         }
 
@@ -51,7 +51,7 @@
             getProject: getProject,
             getRecentBlogPosts: getRecentBlogPosts,
             getBlogPosts: getBlogPosts,
-            getPost: getPost
+            getArticle: getArticle
         };
     }
 
