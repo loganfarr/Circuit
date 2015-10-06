@@ -3748,11 +3748,17 @@ header nav ul li {
   color: #fff;
   padding: 300px 0px 200px 0px;
   margin-top: -100px;
-  margin-bottom: 100px; }
-  /* line 10, ../sass/components/_home.scss */
+  margin-bottom: 100px;
+  max-height: 600px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+  /* line 12, ../sass/components/_home.scss */
   .hero.home {
     background: url("../../images/header-bg.png"); }
-  /* line 14, ../sass/components/_home.scss */
+  /* line 16, ../sass/components/_home.scss */
   .hero h1, .hero h2, .hero h3 {
     color: #fff;
     text-shadow: 1px 1px 6px #333;
@@ -3773,41 +3779,43 @@ nav ul {
   @media (min-width: 1600px) {
     /* line 1, ../sass/components/_portfolio.scss */
     .hero.portfolio {
-      background-position: 0 0; } }
+      background-position: 0 -60px; } }
 
 /* line 19, ../sass/components/_portfolio.scss */
 .hero.project {
   background-repeat: repeat;
-  background-size: initial; }
+  background-size: initial;
+  padding: 200px 0px 100px 0px;
+  margin-bottom: 50px; }
 
-/* line 24, ../sass/components/_portfolio.scss */
+/* line 26, ../sass/components/_portfolio.scss */
 #recent-projects {
   box-shadow: 0px 30px 30px -15px #ccc; }
 
-/* line 28, ../sass/components/_portfolio.scss */
+/* line 30, ../sass/components/_portfolio.scss */
 #recent-projects,
 #portfolio {
   margin-top: 30px;
   color: #fff;
   margin-bottom: 30px;
   padding-bottom: 50px; }
-  /* line 35, ../sass/components/_portfolio.scss */
+  /* line 37, ../sass/components/_portfolio.scss */
   #recent-projects h3,
   #portfolio h3 {
     text-align: center; }
-  /* line 39, ../sass/components/_portfolio.scss */
+  /* line 41, ../sass/components/_portfolio.scss */
   #recent-projects .container > .button,
   #portfolio .container > .button {
     clear: both;
     float: right; }
-  /* line 44, ../sass/components/_portfolio.scss */
+  /* line 46, ../sass/components/_portfolio.scss */
   #recent-projects .project,
   #portfolio .project {
     float: left;
     overflow: hidden;
     -webkit-transition: all 0.2s;
     transition: all 0.2s; }
-    /* line 49, ../sass/components/_portfolio.scss */
+    /* line 51, ../sass/components/_portfolio.scss */
     #recent-projects .project .project-image,
     #portfolio .project .project-image {
       width: 200px;
@@ -3848,41 +3856,41 @@ nav ul {
             -ms-transform: rotate(-60deg);
             -o-transform: rotate(-60deg);
             transform: rotate(-60deg); }
-      /* line 52, ../sass/components/_portfolio.scss */
+      /* line 54, ../sass/components/_portfolio.scss */
       #recent-projects .project .project-image img,
       #portfolio .project .project-image img {
         width: 100%;
         height: auto; }
-      /* line 58, ../sass/components/_portfolio.scss */
+      /* line 60, ../sass/components/_portfolio.scss */
       #recent-projects .project .project-image .hex-inner-2,
       #portfolio .project .project-image .hex-inner-2 {
         position: relative; }
-        /* line 61, ../sass/components/_portfolio.scss */
+        /* line 63, ../sass/components/_portfolio.scss */
         #recent-projects .project .project-image .hex-inner-2 .project-title,
         #portfolio .project .project-image .hex-inner-2 .project-title {
           position: absolute;
           top: 120px;
           text-align: center;
           margin: 20px; }
-          /* line 67, ../sass/components/_portfolio.scss */
+          /* line 69, ../sass/components/_portfolio.scss */
           #recent-projects .project .project-image .hex-inner-2 .project-title h4,
           #portfolio .project .project-image .hex-inner-2 .project-title h4 {
             color: #fff;
             text-shadow: 1px 1px 1px #333;
             line-height: 40px; }
-    /* line 78, ../sass/components/_portfolio.scss */
+    /* line 80, ../sass/components/_portfolio.scss */
     #recent-projects .project:hover,
     #portfolio .project:hover {
       -webkit-transform: scale(1.1);
       transform: scale(1.1); }
 
-/* line 86, ../sass/components/_portfolio.scss */
+/* line 88, ../sass/components/_portfolio.scss */
 #project .project-image {
   display: block;
   margin-right: auto;
   margin-left: auto; }
   @media (min-width: 1200px) {
-    /* line 86, ../sass/components/_portfolio.scss */
+    /* line 88, ../sass/components/_portfolio.scss */
     #project .project-image {
       float: left;
       margin-right: 20px;

@@ -8,7 +8,7 @@
 	}
 
 	@include breakpoint($large) {
-		background-position: 0 0;
+		background-position: 0 -60px;
 	}
 
 	@include breakpoint($medium) {
@@ -19,6 +19,8 @@
 .hero.project {
 	background-repeat: repeat;
 	background-size: initial;
+	padding: 200px 0px 100px 0px;
+	margin-bottom: 50px;
 }
 
 #recent-projects {
