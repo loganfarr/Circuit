@@ -23,10 +23,10 @@
 
 		var onPost = function(data) {}
 
-		$scope.getPost = function(context, nid) {
+		$scope.getArticle = function(context, nid) {
 			context.post.shownMore = true;
 
-			backend.getPost(nid).then(function(data) {
+			backend.getArticle(nid).then(function(data) {
 				context.post.body = $sce.trustAsHtml(data.article[0].body);
 			}, onError);
 		}

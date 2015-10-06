@@ -19,7 +19,7 @@
 				templateUrl: "controllers/blog/blog.html",
 				controller: "BlogController"
 			})
-			.when("/blog/:articleName", {
+			.when("/blog/:articleID", {
 				templateUrl: "controllers/blog/article.html",
 				controller: "ArticleController"
 			})

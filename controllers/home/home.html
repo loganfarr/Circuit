@@ -35,7 +35,7 @@
 				<h4 class="post-title"> {{post.title}} </h4>
 				<div class="post-date">{{post.post_date}}</div>
 				<div class="post-body" ng-bind-html="post.body">{{post.body}}</div>
-				<a class="" style="float:right;" ng-click='getPost(this, post.nid)' ng-show="!post.shownMore">Read Full Post</a>
+				<a class="" style="float:right;" ng-click='getArticle(this, post.nid)' ng-show="!post.shownMore">Read Full Post</a>
 				<a class="" style="float:right;" ng-click='showLess(this, post.nid)' ng-show="post.shownMore">Show Less</a>
 			</div>
 
