@@ -3,6 +3,7 @@
 		var onProject = function(data) {
 			var projectData = data;
 			$scope.project = projectData[0].project;
+			$log.info(JSON.stringify($scope.project));
 			$scope.project.description = $sce.trustAsHtml($scope.project.description);
 		}
 

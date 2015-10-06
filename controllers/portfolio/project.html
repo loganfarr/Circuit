@@ -3,6 +3,7 @@
     <h2>{{project.date}}</h2>
 </div>
 <div class="container" id="project">
-	<img ng-src="{{project.image.src}}" class="project-image" alt="A Creek Bearing Gifts"/>
-	<div class="project-description" ng-bind-html="project.description"></div>
+	<a target="_blank" href="{{project.link}}"><img ng-src="{{project.image.src}}" class="project-image" alt="A Creek Bearing Gifts"/></a>
+	<div class="project-description" ng-bind-html="project.description"></div><br />
+	<p ng-show="project.link">View this site at <a href="{{project.link}}" target="_blank" class="project-link">{{project.link}}</a>.</p>
 </div>
