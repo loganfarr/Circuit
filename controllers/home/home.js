@@ -14,6 +14,7 @@
 			angular.forEach($scope.recentBlogPosts, function(post) {
 				post.shownMore = false;
 				post.body = $sce.trustAsHtml(post.body);
+				post.summary = $sce.trustAsHtml(post.summary);
 			});
 		};
 
@@ -32,8 +33,6 @@
 		}
 
 		$scope.showLess = function(context, nid) {
-			$log.info(context);
-
 			context.post.shownMore = false;
 
 			// context.post.body = String(context.post.body);
