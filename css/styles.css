@@ -106,6 +106,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .clearfix {
   overflow: auto; }
 
+/* line 36, ../sass/base/_common.scss */
+.container {
+  padding: 20px; }
+  @media (min-width: 1240px) {
+    /* line 36, ../sass/base/_common.scss */
+    .container {
+      padding: 0; } }
+
 /* ---------------------------------------------------------------------- 
 * Product Name: CSS3 Hexagon Buttons
 * Product URI: http://shariarbd.com/demo/css3-hexagon-buttons/
@@ -1083,54 +1091,55 @@ body {
 /* line 17, ../sass/base/_html.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #333;
-  font-family: "Raleway", Helvetica, Arial, sans-serif; }
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  line-height: initial; }
 
-/* line 22, ../sass/base/_html.scss */
+/* line 23, ../sass/base/_html.scss */
 h1 {
   font-size: 3.5em;
   margin: 0.5em 0; }
 
-/* line 27, ../sass/base/_html.scss */
+/* line 28, ../sass/base/_html.scss */
 h2 {
   font-size: 2.5em;
   margin: 0.4em 0; }
 
-/* line 32, ../sass/base/_html.scss */
+/* line 33, ../sass/base/_html.scss */
 h3 {
   font-size: 2em;
   margin: 0.3em 0;
   line-height: 1.2em; }
 
-/* line 38, ../sass/base/_html.scss */
+/* line 39, ../sass/base/_html.scss */
 h4 {
   font-size: 1.75em;
   margin: 0.2em 0; }
 
-/* line 43, ../sass/base/_html.scss */
+/* line 44, ../sass/base/_html.scss */
 h5 {
   font-size: 1.3em;
   margin: 0.1em 0; }
 
-/* line 48, ../sass/base/_html.scss */
+/* line 49, ../sass/base/_html.scss */
 h6 {
   font-size: 1em; }
 
-/* line 56, ../sass/base/_html.scss */
+/* line 57, ../sass/base/_html.scss */
 em, i {
   font-style: italic; }
 
-/* line 60, ../sass/base/_html.scss */
+/* line 61, ../sass/base/_html.scss */
 b, strong {
   font-weight: bold; }
 
-/* line 64, ../sass/base/_html.scss */
+/* line 65, ../sass/base/_html.scss */
 a {
   color: #29abe2;
   text-decoration: none; }
-  /* line 68, ../sass/base/_html.scss */
+  /* line 69, ../sass/base/_html.scss */
   a:hover {
     color: #0472A2; }
-  /* line 72, ../sass/base/_html.scss */
+  /* line 73, ../sass/base/_html.scss */
   a.button {
     background-color: #29abe2;
     color: #fff;
@@ -1150,13 +1159,13 @@ a {
       color: #fff;
       border-radius: 0; }
 
-/* line 77, ../sass/base/_html.scss */
+/* line 78, ../sass/base/_html.scss */
 input,
 textarea {
   padding: 10px;
   margin: 10px 0; }
 
-/* line 83, ../sass/base/_html.scss */
+/* line 84, ../sass/base/_html.scss */
 input[type="submit"] {
   border: 0;
   background-image: none;
@@ -1179,25 +1188,33 @@ input[type="submit"] {
     color: #fff;
     border-radius: 0; }
 
-/* line 90, ../sass/base/_html.scss */
+/* line 91, ../sass/base/_html.scss */
 select {
   padding: 5px;
   margin: 5px;
   border: 1px solid rgba(169, 169, 169, 0.5); }
 
-/* line 96, ../sass/base/_html.scss */
+/* line 97, ../sass/base/_html.scss */
 ul {
   padding-left: 1em; }
-  /* line 99, ../sass/base/_html.scss */
+  /* line 100, ../sass/base/_html.scss */
   ul li {
     list-style-type: circle; }
 
-/* line 104, ../sass/base/_html.scss */
+/* line 105, ../sass/base/_html.scss */
 blockquote {
   padding: 0 1.5em;
   margin: 0 1.5em;
   border-left: 5px solid #ccc;
   font-style: italic; }
+
+/* line 112, ../sass/base/_html.scss */
+footer {
+  padding: 20px; }
+  @media (min-width: 1240px) {
+    /* line 112, ../sass/base/_html.scss */
+    footer {
+      padding: 0; } }
 
 /*
  * Susy Reference
@@ -1226,46 +1243,39 @@ footer {
     display: block;
     clear: both; }
 
-/* line 41, ../sass/base/_layout.scss */
-#header-wrapper header nav {
-  width: 431px;
-  display: block;
-  margin-right: auto;
-  margin-left: auto; }
-
-/* line 49, ../sass/base/_layout.scss */
+/* line 33, ../sass/base/_layout.scss */
 #main-wrapper {
   margin-top: 25px; }
-  /* line 51, ../sass/base/_layout.scss */
+  /* line 35, ../sass/base/_layout.scss */
   #main-wrapper #main-content {
     padding-top: 25px; }
 
-/* line 56, ../sass/base/_layout.scss */
+/* line 40, ../sass/base/_layout.scss */
 #footer-wrapper {
   margin-top: 25px; }
-  /* line 59, ../sass/base/_layout.scss */
+  /* line 43, ../sass/base/_layout.scss */
   #footer-wrapper footer {
     padding-top: 25px; }
 
-/* line 65, ../sass/base/_layout.scss */
+/* line 49, ../sass/base/_layout.scss */
 .column {
   display: inline-block;
   vertical-align: top; }
 
-/* line 70, ../sass/base/_layout.scss */
+/* line 54, ../sass/base/_layout.scss */
 .col-25 {
   text-align: center;
   margin-bottom: 20px; }
 
 @media (min-width: 1200px) {
-  /* line 76, ../sass/base/_layout.scss */
+  /* line 60, ../sass/base/_layout.scss */
   .col-25 {
     width: 24%;
     margin-right: 1%;
     text-align: center;
     margin-bottom: 0; }
 
-  /* line 83, ../sass/base/_layout.scss */
+  /* line 67, ../sass/base/_layout.scss */
   .col-75 {
     width: 74%; } }
 /*!
@@ -3664,6 +3674,7 @@ footer {
   margin-top: 100px; }
   /* line 62, ../sass/components/_blog.scss */
   #blog .post {
+    width: 100%;
     display: inline-block;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -3671,11 +3682,15 @@ footer {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     padding: 30px; }
-    @media (min-width: 1600px) {
+    @media (min-width: 768px) {
+      /* line 62, ../sass/components/_blog.scss */
+      #blog .post {
+        width: 49%; } }
+    @media (min-width: 1240px) {
       /* line 62, ../sass/components/_blog.scss */
       #blog .post {
         width: 33%; } }
-    /* line 71, ../sass/components/_blog.scss */
+    /* line 77, ../sass/components/_blog.scss */
     #blog .post .post-image img {
       display: block;
       margin-right: auto;
@@ -3683,19 +3698,19 @@ footer {
       width: 200px;
       height: 200px;
       border-radius: 100px; }
-    /* line 77, ../sass/components/_blog.scss */
+    /* line 83, ../sass/components/_blog.scss */
     #blog .post .post-body {
       padding: 25px;
       padding-top: 110px;
       margin-top: -100px;
       border: 1px solid #ccc; }
-      /* line 83, ../sass/components/_blog.scss */
+      /* line 89, ../sass/components/_blog.scss */
       #blog .post .post-body .post-title {
         text-align: center; }
-    /* line 88, ../sass/components/_blog.scss */
+    /* line 94, ../sass/components/_blog.scss */
     #blog .post .post-read-more {
       text-align: center; }
-      /* line 91, ../sass/components/_blog.scss */
+      /* line 97, ../sass/components/_blog.scss */
       #blog .post .post-read-more a {
         background-color: #29abe2;
         color: #fff;
@@ -3714,9 +3729,24 @@ footer {
           background-color: #0472A2;
           color: #fff;
           border-radius: 0; }
-        /* line 94, ../sass/components/_blog.scss */
+        /* line 100, ../sass/components/_blog.scss */
         #blog .post .post-read-more a i.fa {
           margin-right: 10px; }
+
+/* line 108, ../sass/components/_blog.scss */
+.article-spotlight-image {
+  display: block;
+  width: 350px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px; }
+  @media (min-width: 768px) {
+    /* line 108, ../sass/components/_blog.scss */
+    .article-spotlight-image {
+      float: left;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      margin-left: 0; } }
 
 /* line 2, ../sass/components/_footer.scss */
 .social-media-links {
@@ -3740,20 +3770,55 @@ footer {
     .social-media-links #linkedIn-icon:hover {
       color: #fff; }
 
-/* line 11, ../sass/components/_header.scss */
-header nav ul li {
-  list-style-type: none;
-  display: inline-block; }
+/* line 1, ../sass/components/_header.scss */
+#header-wrapper {
+  background-color: #fff;
+  float: left;
+  clear: both;
+  overflow: auto;
+  margin-top: -25px; }
+
+/* line 10, ../sass/components/_header.scss */
+header nav {
+  width: 433px;
+  max-width: 100%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto; }
   /* line 15, ../sass/components/_header.scss */
-  header nav ul li a {
-    padding: 5px 20px; }
+  header nav ul {
+    padding-left: 0; }
+    /* line 18, ../sass/components/_header.scss */
+    header nav ul li {
+      text-align: center;
+      list-style-type: none; }
+      @media (min-width: 600px) {
+        /* line 18, ../sass/components/_header.scss */
+        header nav ul li {
+          display: inline-block; } }
+      /* line 25, ../sass/components/_header.scss */
+      header nav ul li a {
+        padding: 10px 30px;
+        display: block;
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s; }
+        /* line 30, ../sass/components/_header.scss */
+        header nav ul li a:hover, header nav ul li a:active {
+          background: #29abe2;
+          color: #fff; }
+/* line 40, ../sass/components/_header.scss */
+header #responsive-menu-container {
+  padding: 10px 30px;
+  display: none; }
+  /* line 47, ../sass/components/_header.scss */
+  header #responsive-menu-container .fa-bars {
+    float: right; }
 
 /* line 1, ../sass/components/_home.scss */
 .hero {
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
-  padding: 300px 0px 200px 0px;
   margin-top: -100px;
   margin-bottom: 100px;
   max-height: 600px;
@@ -3761,19 +3826,20 @@ header nav ul li {
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
   -ms-box-sizing: border-box;
-  box-sizing: border-box; }
-  /* line 12, ../sass/components/_home.scss */
+  box-sizing: border-box;
+  padding: 130px 0px 200px 0px; }
+  @media (min-width: 768px) {
+    /* line 1, ../sass/components/_home.scss */
+    .hero {
+      padding-top: 300px; } }
+  /* line 15, ../sass/components/_home.scss */
   .hero.home {
     background: url("../../images/header-bg.png"); }
-  /* line 16, ../sass/components/_home.scss */
+  /* line 19, ../sass/components/_home.scss */
   .hero h1, .hero h2, .hero h3 {
     color: #fff;
     text-shadow: 1px 1px 6px #333;
     text-align: center; }
-
-/* line 1, ../sass/components/_navigation.scss */
-nav ul {
-  padding-left: 0; }
 
 /* line 1, ../sass/components/_portfolio.scss */
 .hero.portfolio {

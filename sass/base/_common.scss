@@ -32,3 +32,11 @@
 .clearfix {
 	overflow: auto;
 }
+
+.container {
+	padding: 20px;
+
+	@include breakpoint($desktop) {
+		padding: 0;
+	}
+}

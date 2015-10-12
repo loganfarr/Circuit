@@ -26,25 +26,9 @@ $tiny: 500px;
 header,
 .container,
 footer {
-	@include container($defaultContainer);
+	// @include container($defaultContainer);
+	@include container($medium);
 }
-
-#header-wrapper {
-	header {
-		// padding-top: gutter();
-
-		// #logo {
-		// 	width: span(4);
-		// 	float:left;
-		// }
-
-		nav {
-			width: 431px;
-			@include center-element;
-		}
-	}
-}
-
 
 #main-wrapper {
 	margin-top: 25px;
