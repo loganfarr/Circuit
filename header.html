@@ -1,19 +1,17 @@
 <div id="header-wrapper" class="wrapper">
-	<header>
-		<!-- <div id="logo">
-			<a href="/">
-				<img src="images/logo.png" alt="Logan Farr | Web Developer" id="logo">
-			</a>
-		</div> -->
-
-		<nav>
+	<header ng-controller="MenuController">
+		<nav id="main-menu">
 			<ul>
-				<li><a href="#/">Home</a></li>
-				<li><a href="#/projects">Portfolio</a></li>
-				<!-- <li><a href="#/labs">Labs</a></li> -->
-				<li><a href="#/blog">Blog</a></li>
-				<li><a href="#/about">About</a></li>
+				<li><a ng-class="getActive('/')" href="#/">Home</a></li>
+				<li><a ng-class="getActive('#/projects')" href="#/projects">Portfolio</a></li>
+				<li><a ng-class="getActive('#/blog')" href="#/blog">Blog</a></li>
+				<li><a ng-class="getActive('#/about')" href="#/about">About</a></li>
 			</ul>
 		</nav>
+
+		<div id="responsive-menu-container">
+			<div class="resposive-menu-toggle">Menu <i class="fa fa-bars fa-1x"></i></div>
+			<div class="menu-responsified" style="display: none;"></div>
+		</div>
 	</header>
 </div>
