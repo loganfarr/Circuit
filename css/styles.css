@@ -1192,6 +1192,13 @@ ul {
   ul li {
     list-style-type: circle; }
 
+/* line 104, ../sass/base/_html.scss */
+blockquote {
+  padding: 0 1.5em;
+  margin: 0 1.5em;
+  border-left: 5px solid #ccc;
+  font-style: italic; }
+
 /*
  * Susy Reference
  * container - Establish a layout context

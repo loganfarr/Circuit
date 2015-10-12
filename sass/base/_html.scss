@@ -100,3 +100,10 @@ ul {
 		list-style-type: circle;
 	}
 }
+
+blockquote {
+	padding: 0 1.5em;
+	margin: 0 1.5em;
+	border-left: 5px solid $smoke;
+	font-style: italic;
+}
