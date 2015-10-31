@@ -43,6 +43,10 @@
 				templateUrl: "controllers/about/about.html",
 				controller: "AboutController"
 			})
+			.when("/contact", {
+				templateUrl: "controllers/contact/contact.html",
+				controller: "ContactController"
+			})
 			.when("/login", {redirectTo:"http://backend.loganfarr.com/user"})
 			.otherwise({redirectTo:"/"});
 
