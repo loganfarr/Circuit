@@ -1,5 +1,4 @@
 #header-wrapper {
-	background-color: #fff;
 	float: left;
 	clear: both;
 	overflow: auto;
@@ -8,9 +7,8 @@
 
 header {
 	nav {
-		width: 433px;
-		max-width: 100%;
-		@include center-element;
+		text-align: center;
+		margin-bottom: 100px;
 
 		ul {
 			padding-left: 0;
@@ -26,11 +24,15 @@ header {
 					padding: 10px 30px;
 					display: block;
 					@include transition(all, 0.2s);
+					color: #fff;
+					border-bottom: 1px solid #fff;
+					text-shadow: 1px 1px 2px $black;
 
 					&:hover,
 					&:active {
-						background: $blue;
-						color: #fff;
+						color: $blue;
+						background: #fff;
+						text-shadow: none;
 					}
 				}
 			}
@@ -47,5 +49,28 @@ header {
 		.fa-bars {
 			float: right;
 		}
+	}
+}
+
+.hero {
+	background-repeat: no-repeat;
+	background-size: cover;
+	color:#fff;
+	margin-top: -100px;
+	margin-bottom: 100px;
+	max-height: 700px;
+	@include box-sizing(border-box);
+	padding: 130px 0px 200px 0px;
+
+	@include breakpoint($tablet) {
+		padding-top: 300px 
+	}
+
+	
+
+	h1,h2,h3 {
+		color: #fff;
+		text-shadow: 1px 1px 6px #333;
+		text-align: center;
 	}
 }
