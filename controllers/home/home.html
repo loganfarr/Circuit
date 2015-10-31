@@ -8,21 +8,22 @@
 			<h3>Recent Projects</h3>
 
 			<div class="project" ng-repeat="project in recentProjects.projects">
-				<div class="project-image hex-container">
-					<div class="hex-inner-1">
-						<div class="hex-inner-2" ng-style="{'background-image': 'url({{project.front_image.src}})'}">
-							<a href="/#/projects/{{project.node_id}}">
-								{{project.title_encoded}}
-								<div class="project-title">
-									<h4>{{project.title}}</h4>
-								</div>
-							</a>
+				<a href="/#/projects/{{project.node_id}}">
+					<div class="project-image hex-container">
+						<div class="hex-inner-1">
+							<div class="hex-inner-2" ng-style="{'background-image': 'url({{project.front_image.src}})'}">
+									{{project.title_encoded}}
+									<div class="project-title">
+										<h4>{{project.title}}</h4>
+									</div>
+								
+							</div>
 						</div>
 					</div>
-				</div>
+				</a>
 			</div>
 
-			<a href="#" class="button">View All Projects</a>
+			<a href="/#/portfolio" class="button">View All Projects</a>
 		</div>
 	</div>
 
@@ -36,8 +37,8 @@
 				<div class="post-date">{{post.post_date}}</div>
 				<div class="post-summary" ng-bind-html="post.summary" ng-show="!post.shownMore">{{post.summary}}</div>
 				<div class="post-body" ng-bind-html="post.body" ng-show="post.shownMore">{{post.body}}</div>
-				<a class="" style="float:right;" ng-click='getArticle(this, post.nid)' ng-show="!post.shownMore">Read Full Post</a>
-				<a class="" style="float:right;" ng-click='showLess(this, post.nid)' ng-show="post.shownMore">Show Less</a>
+				<a class="post-toggle" style="float:right;" ng-click='getArticle(this, post.nid)' ng-show="!post.shownMore">Read Full Post</a>
+				<a class="post-toggle" style="float:right;" ng-click='showLess(this, post.nid)' ng-show="post.shownMore">Show Less</a>
 			</div>
 
 			<a class="button" style="float: right;" href="#/blog">See all Posts</a>
