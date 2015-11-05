@@ -8,7 +8,7 @@
 			<h3>Recent Projects</h3>
 
 			<div class="project" ng-repeat="project in recentProjects.projects">
-				<a href="#/projects/{{project.node_id}}">
+				<a href="/projects/{{project.node_id}}">
 					<div class="project-image hex-container">
 						<div class="hex-inner-1">
 							<div class="hex-inner-2" ng-style="{'background-image': 'url({{project.front_image.src}})'}">
@@ -23,7 +23,7 @@
 				</a>
 			</div>
 
-			<a href="#/portfolio" class="button">View All Projects</a>
+			<a href="/portfolio" class="button">View All Projects</a>
 		</div>
 	</div>
 
@@ -41,7 +41,7 @@
 				<a class="post-toggle" style="float:right;" ng-click='showLess(this, post.nid)' ng-show="post.shownMore">Show Less</a>
 			</div>
 
-			<a class="button" style="float: right;" href="#/blog">See all Posts</a>
+			<a class="button" style="float: right;" href="/blog">See all Posts</a>
 		</div>
 	</div>
 </div>
