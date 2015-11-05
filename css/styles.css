@@ -13,7 +13,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../.rvm/gems/ruby-2.2.3/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -34,38 +34,38 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline; }
 
-/* line 22, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../.rvm/gems/ruby-2.2.3/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1; }
 
-/* line 24, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../.rvm/gems/ruby-2.2.3/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none; }
 
-/* line 26, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../.rvm/gems/ruby-2.2.3/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 28, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../.rvm/gems/ruby-2.2.3/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
-/* line 30, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../.rvm/gems/ruby-2.2.3/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none; }
-  /* line 103, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+  /* line 103, ../../../.rvm/gems/ruby-2.2.3/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
   q:before, q:after, blockquote:before, blockquote:after {
     content: "";
     content: none; }
 
-/* line 32, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../.rvm/gems/ruby-2.2.3/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none; }
 
-/* line 116, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../.rvm/gems/ruby-2.2.3/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
@@ -1235,7 +1235,7 @@ footer {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto; }
-  /* line 12, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../.rvm/gems/ruby-2.2.3/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
   header:after,
   .container:after,
   footer:after {
@@ -3618,7 +3618,7 @@ footer {
 
 /* line 1, ../sass/components/_about.scss */
 .hero.about {
-  background: url("../../images/grand-teton.jpg"); }
+  background: url("../images/grand-teton.jpg"); }
   @media (min-width: 1200px) {
     /* line 1, ../sass/components/_about.scss */
     .hero.about {
@@ -3626,7 +3626,7 @@ footer {
 
 /* line 1, ../sass/components/_blog.scss */
 .hero.blog {
-  background: url("../../images/grass.jpg");
+  background: url("../images/grass.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
   @media (min-width: 1600px) {
@@ -3635,44 +3635,48 @@ footer {
       background-position: 0 -250px; } }
 
 /* line 15, ../sass/components/_blog.scss */
+.hero.article {
+  background: url("../images/header-bg.png"); }
+
+/* line 19, ../sass/components/_blog.scss */
 #recent-posts {
   clear: both;
   padding-top: 60px;
   padding-bottom: 100px; }
-  /* line 21, ../sass/components/_blog.scss */
+  /* line 25, ../sass/components/_blog.scss */
   #recent-posts h3 {
     text-align: center; }
-  /* line 25, ../sass/components/_blog.scss */
+  /* line 29, ../sass/components/_blog.scss */
   #recent-posts .post {
     clear: both;
     padding-top: 50px;
     border-top: 1px solid #ccc;
     margin-top: 50px; }
-    /* line 32, ../sass/components/_blog.scss */
+    /* line 36, ../sass/components/_blog.scss */
     #recent-posts .post .post-image {
       float: left;
       margin-right: 50px; }
-      /* line 36, ../sass/components/_blog.scss */
+      /* line 40, ../sass/components/_blog.scss */
       #recent-posts .post .post-image img {
         width: 200px;
         height: 200px;
         border-radius: 100px; }
-    /* line 41, ../sass/components/_blog.scss */
+    /* line 45, ../sass/components/_blog.scss */
     #recent-posts .post .post-title {
       margin-bottom: 1em; }
-    /* line 45, ../sass/components/_blog.scss */
+    /* line 49, ../sass/components/_blog.scss */
     #recent-posts .post .post-date {
       font-style: italic; }
-  /* line 53, ../sass/components/_blog.scss */
+  /* line 57, ../sass/components/_blog.scss */
   #recent-posts #single-post div.article-image img {
     width: 200px;
     height: 200px;
     border-radius: 100px; }
 
-/* line 59, ../sass/components/_blog.scss */
+/* line 63, ../sass/components/_blog.scss */
 #blog {
   margin-top: 100px; }
-  /* line 62, ../sass/components/_blog.scss */
+  /* line 66, ../sass/components/_blog.scss */
   #blog .post {
     width: 100%;
     display: inline-block;
@@ -3683,14 +3687,14 @@ footer {
     box-sizing: border-box;
     padding: 30px; }
     @media (min-width: 768px) {
-      /* line 62, ../sass/components/_blog.scss */
+      /* line 66, ../sass/components/_blog.scss */
       #blog .post {
         width: 49%; } }
     @media (min-width: 1240px) {
-      /* line 62, ../sass/components/_blog.scss */
+      /* line 66, ../sass/components/_blog.scss */
       #blog .post {
         width: 33%; } }
-    /* line 77, ../sass/components/_blog.scss */
+    /* line 81, ../sass/components/_blog.scss */
     #blog .post .post-image img {
       display: block;
       margin-right: auto;
@@ -3698,19 +3702,19 @@ footer {
       width: 200px;
       height: 200px;
       border-radius: 100px; }
-    /* line 83, ../sass/components/_blog.scss */
+    /* line 87, ../sass/components/_blog.scss */
     #blog .post .post-body {
       padding: 25px;
       padding-top: 110px;
       margin-top: -100px;
       border: 1px solid #ccc; }
-      /* line 89, ../sass/components/_blog.scss */
+      /* line 93, ../sass/components/_blog.scss */
       #blog .post .post-body .post-title {
         text-align: center; }
-    /* line 94, ../sass/components/_blog.scss */
+    /* line 98, ../sass/components/_blog.scss */
     #blog .post .post-read-more {
       text-align: center; }
-      /* line 97, ../sass/components/_blog.scss */
+      /* line 101, ../sass/components/_blog.scss */
       #blog .post .post-read-more a {
         background-color: #29abe2;
         color: #fff;
@@ -3729,11 +3733,11 @@ footer {
           background-color: #0472A2;
           color: #fff;
           border-radius: 0; }
-        /* line 100, ../sass/components/_blog.scss */
+        /* line 104, ../sass/components/_blog.scss */
         #blog .post .post-read-more a i.fa {
           margin-right: 10px; }
 
-/* line 108, ../sass/components/_blog.scss */
+/* line 112, ../sass/components/_blog.scss */
 .article-spotlight-image {
   display: block;
   width: 350px;
@@ -3741,7 +3745,7 @@ footer {
   margin-left: auto;
   margin-bottom: 50px; }
   @media (min-width: 768px) {
-    /* line 108, ../sass/components/_blog.scss */
+    /* line 112, ../sass/components/_blog.scss */
     .article-spotlight-image {
       float: left;
       margin-right: 40px;
@@ -3840,7 +3844,7 @@ header #responsive-menu-container {
 
 /* line 1, ../sass/components/_home.scss */
 .hero.home {
-  background: url("../../images/header-bg.png"); }
+  background: url("../images/header-bg.png"); }
 
 /* line 5, ../sass/components/_home.scss */
 .post-toggle {
@@ -3848,7 +3852,7 @@ header #responsive-menu-container {
 
 /* line 1, ../sass/components/_portfolio.scss */
 .hero.portfolio {
-  background: url("../../images/cottonwood.jpg");
+  background: url("../images/cottonwood.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
   /* line 6, ../sass/components/_portfolio.scss */

@@ -1,5 +1,5 @@
 .hero.about {
-	background: url('../../images/grand-teton.jpg');
+	background: url('../images/grand-teton.jpg');
 	@include breakpoint($medium) {
 		background-position: -610px 28px;
 	}

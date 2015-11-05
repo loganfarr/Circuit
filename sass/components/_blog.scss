@@ -1,5 +1,5 @@
 .hero.blog {
-	background: url('../../images/grass.jpg');
+	background: url('../images/grass.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 
@@ -10,6 +10,10 @@
 	@include breakpoint($medium) {
 
 	}
+}
+
+.hero.article {
+	background: url('../images/header-bg.png');
 }
 
 #recent-posts {
