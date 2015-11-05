@@ -23,18 +23,6 @@
 				templateUrl: "controllers/blog/article.html",
 				controller: "ArticleController"
 			})
-			.when("/clients", {
-				templateUrl: "controllers/client/clientBase.html",
-				controller: "clientBaseController"
-			})
-			.when("/client/:clientName",{
-				templateUrl: "controllers/client/client.html",
-				controller: "ClientController"
-			})
-			.when("/content/:pageName", {
-				templateUrl: "controllers/page/page.html",
-				controller: "PageController"
-			})
 			.when("/styleguide", {
 				templateUrl: "controllers/styleguide/styleguide.html",
 				controller: "StyleGuideController"
@@ -51,6 +39,8 @@
 			.otherwise({redirectTo:"/"});
 
 		$compileProvider.debugInfoEnabled(false);
-		// $locationProvider.html5Mode(true);
+		
+		// Use the HTML5 History API
+		$locationProvider.html5Mode(true);
 	}); 
 }());
