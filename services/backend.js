@@ -1,7 +1,7 @@
 (function() {
     var backend = function($http, $q, $log) {
         var fetchData = function(url) {
-            url = 'http://backend.loganfarr.com/' + url + '.json';
+            url = 'https://backend.loganfarr.com/' + url + '.json';
 
             return $http.get(url)
                 .then(
