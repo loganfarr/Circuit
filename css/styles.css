@@ -1236,7 +1236,7 @@ footer {
 header,
 .container,
 footer {
-  max-width: 1200px;
+  max-width: 860px;
   margin-left: auto;
   margin-right: auto; }
   /* line 12, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
@@ -1247,39 +1247,39 @@ footer {
     display: block;
     clear: both; }
 
-/* line 33, ../sass/base/_layout.scss */
+/* line 32, ../sass/base/_layout.scss */
 #main-wrapper {
   margin-top: 25px; }
-  /* line 35, ../sass/base/_layout.scss */
+  /* line 34, ../sass/base/_layout.scss */
   #main-wrapper #main-content {
     padding-top: 25px; }
 
-/* line 40, ../sass/base/_layout.scss */
+/* line 39, ../sass/base/_layout.scss */
 #footer-wrapper {
   margin-top: 25px; }
-  /* line 43, ../sass/base/_layout.scss */
+  /* line 42, ../sass/base/_layout.scss */
   #footer-wrapper footer {
     padding-top: 25px; }
 
-/* line 49, ../sass/base/_layout.scss */
+/* line 48, ../sass/base/_layout.scss */
 .column {
   display: inline-block;
   vertical-align: top; }
 
-/* line 54, ../sass/base/_layout.scss */
+/* line 53, ../sass/base/_layout.scss */
 .col-25 {
   text-align: center;
   margin-bottom: 20px; }
 
-@media (min-width: 1200px) {
-  /* line 60, ../sass/base/_layout.scss */
+@media (min-width: 860px) {
+  /* line 59, ../sass/base/_layout.scss */
   .col-25 {
     width: 24%;
     margin-right: 1%;
     text-align: center;
     margin-bottom: 0; }
 
-  /* line 67, ../sass/base/_layout.scss */
+  /* line 66, ../sass/base/_layout.scss */
   .col-75 {
     width: 74%; } }
 /*!
@@ -3623,7 +3623,7 @@ footer {
 /* line 1, ../sass/components/_about.scss */
 .hero.about {
   background: url("../images/grand-teton.jpg"); }
-  @media (min-width: 1200px) {
+  @media (min-width: 860px) {
     /* line 1, ../sass/components/_about.scss */
     .hero.about {
       background-position: -610px 28px; } }
@@ -3633,7 +3633,7 @@ footer {
   background: url("../images/grass.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
-  @media (min-width: 1600px) {
+  @media (min-width: 1000px) {
     /* line 1, ../sass/components/_blog.scss */
     .hero.blog {
       background-position: 0 -250px; } }
@@ -3643,105 +3643,77 @@ footer {
   background: url("../images/header-bg.png"); }
 
 /* line 19, ../sass/components/_blog.scss */
-#recent-posts {
+#recent-posts,
+#blog {
   clear: both;
   padding-top: 60px;
   padding-bottom: 100px; }
-  /* line 25, ../sass/components/_blog.scss */
-  #recent-posts h3 {
+  /* line 26, ../sass/components/_blog.scss */
+  #recent-posts h3,
+  #blog h3 {
     text-align: center; }
-  /* line 29, ../sass/components/_blog.scss */
-  #recent-posts .post {
+  /* line 30, ../sass/components/_blog.scss */
+  #recent-posts .post,
+  #blog .post {
     clear: both;
     padding-top: 50px;
     border-top: 1px solid #ccc;
-    margin-top: 50px; }
-    /* line 36, ../sass/components/_blog.scss */
-    #recent-posts .post .post-image {
-      float: left;
-      margin-right: 50px; }
-      /* line 40, ../sass/components/_blog.scss */
-      #recent-posts .post .post-image img {
-        width: 200px;
-        height: 200px;
-        border-radius: 100px; }
-    /* line 45, ../sass/components/_blog.scss */
-    #recent-posts .post .post-title {
-      margin-bottom: 1em; }
-    /* line 49, ../sass/components/_blog.scss */
-    #recent-posts .post .post-date {
-      font-style: italic; }
-  /* line 57, ../sass/components/_blog.scss */
-  #recent-posts #single-post div.article-image img {
-    width: 200px;
-    height: 200px;
-    border-radius: 100px; }
-
-/* line 63, ../sass/components/_blog.scss */
-#blog {
-  margin-top: 100px; }
-  /* line 66, ../sass/components/_blog.scss */
-  #blog .post {
-    width: 100%;
-    display: inline-block;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 30px; }
-    @media (min-width: 768px) {
-      /* line 66, ../sass/components/_blog.scss */
-      #blog .post {
-        width: 49%; } }
-    @media (min-width: 1240px) {
-      /* line 66, ../sass/components/_blog.scss */
-      #blog .post {
-        width: 33%; } }
-    /* line 81, ../sass/components/_blog.scss */
-    #blog .post .post-image img {
+    margin-top: 50px;
+    position: relative; }
+    /* line 37, ../sass/components/_blog.scss */
+    #recent-posts .post .post-image,
+    #blog .post .post-image {
       display: block;
       margin-right: auto;
       margin-left: auto;
       width: 200px;
-      height: 200px;
-      border-radius: 100px; }
-    /* line 87, ../sass/components/_blog.scss */
-    #blog .post .post-body {
-      padding: 25px;
-      padding-top: 110px;
-      margin-top: -100px;
-      border: 1px solid #ccc; }
-      /* line 93, ../sass/components/_blog.scss */
-      #blog .post .post-body .post-title {
-        text-align: center; }
-    /* line 98, ../sass/components/_blog.scss */
-    #blog .post .post-read-more {
-      text-align: center; }
-      /* line 101, ../sass/components/_blog.scss */
-      #blog .post .post-read-more a {
-        background-color: #29abe2;
-        color: #fff;
-        padding: 10px 20px;
-        border-radius: 20px;
-        font-size: 15px;
-        display: inline-block;
-        margin: 10px;
-        cursor: pointer;
-        -webkit-transition: background-color 0.3s;
-        transition: background-color 0.3s;
-        -webkit-transition: border-radius 0.3s;
-        transition: border-radius 0.3s; }
-        /* line 33, ../sass/_mixins.scss */
-        #blog .post .post-read-more a:hover {
-          background-color: #0472A2;
-          color: #fff;
-          border-radius: 0; }
-        /* line 104, ../sass/components/_blog.scss */
-        #blog .post .post-read-more a i.fa {
-          margin-right: 10px; }
+      margin-bottom: 50px; }
+      @media (min-width: 740px) {
+        /* line 37, ../sass/components/_blog.scss */
+        #recent-posts .post .post-image,
+        #blog .post .post-image {
+          float: left;
+          margin-left: 0px;
+          margin-right: 50px;
+          margin-bottom: 0; } }
+      /* line 49, ../sass/components/_blog.scss */
+      #recent-posts .post .post-image img,
+      #blog .post .post-image img {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px; }
+    /* line 54, ../sass/components/_blog.scss */
+    #recent-posts .post .post-title,
+    #blog .post .post-title {
+      margin-bottom: 1em; }
+    /* line 58, ../sass/components/_blog.scss */
+    #recent-posts .post .post-date,
+    #blog .post .post-date {
+      font-style: italic; }
+    /* line 64, ../sass/components/_blog.scss */
+    #recent-posts .post .post-read-more,
+    #recent-posts .post .post-toggle,
+    #blog .post .post-read-more,
+    #blog .post .post-toggle {
+      cursor: pointer;
+      position: absolute;
+      bottom: 0;
+      right: 30px; }
+    /* line 72, ../sass/components/_blog.scss */
+    #recent-posts .post .see-all-posts,
+    #blog .post .see-all-posts {
+      width: 123px;
+      display: block;
+      margin-right: auto;
+      margin-left: auto; }
+  /* line 79, ../sass/components/_blog.scss */
+  #recent-posts #single-post div.article-image img,
+  #blog #single-post div.article-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px; }
 
-/* line 112, ../sass/components/_blog.scss */
+/* line 85, ../sass/components/_blog.scss */
 .article-spotlight-image {
   display: block;
   width: 350px;
@@ -3749,7 +3721,7 @@ footer {
   margin-left: auto;
   margin-bottom: 50px; }
   @media (min-width: 768px) {
-    /* line 112, ../sass/components/_blog.scss */
+    /* line 85, ../sass/components/_blog.scss */
     .article-spotlight-image {
       float: left;
       margin-right: 40px;
@@ -3862,7 +3834,7 @@ header #responsive-menu-container {
   /* line 6, ../sass/components/_portfolio.scss */
   .hero.portfolio h1, .hero.portfolio h2, .hero.portfolio h3 {
     text-shadow: 1px 1px 6px #000; }
-  @media (min-width: 1600px) {
+  @media (min-width: 1000px) {
     /* line 1, ../sass/components/_portfolio.scss */
     .hero.portfolio {
       background-position: 0 -60px; } }
@@ -3879,37 +3851,57 @@ header #responsive-menu-container {
   box-shadow: 0px 30px 30px -15px #ccc; }
 
 /* line 30, ../sass/components/_portfolio.scss */
+#projects-container {
+  width: 100%;
+  max-width: 1500px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center; }
+
+/* line 37, ../sass/components/_portfolio.scss */
 #recent-projects,
 #portfolio {
   margin-top: 30px;
   color: #fff;
   margin-bottom: 30px;
   padding-bottom: 50px; }
-  /* line 37, ../sass/components/_portfolio.scss */
+  /* line 44, ../sass/components/_portfolio.scss */
   #recent-projects h3,
   #portfolio h3 {
     text-align: center; }
-  /* line 41, ../sass/components/_portfolio.scss */
+  /* line 48, ../sass/components/_portfolio.scss */
   #recent-projects .container > .button,
   #portfolio .container > .button {
     clear: both;
     float: right; }
-  /* line 46, ../sass/components/_portfolio.scss */
+  /* line 53, ../sass/components/_portfolio.scss */
   #recent-projects .project,
   #portfolio .project {
-    float: left;
+    display: inline-block;
     overflow: hidden;
     -webkit-transition: all 0.2s;
-    transition: all 0.2s; }
-    /* line 51, ../sass/components/_portfolio.scss */
-    #recent-projects .project .project-image,
-    #portfolio .project .project-image {
+    transition: all 0.2s;
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto; }
+    @media (min-width: 860px) {
+      /* line 53, ../sass/components/_portfolio.scss */
+      #recent-projects .project,
+      #portfolio .project {
+        display: inline-block; } }
+    /* line 68, ../sass/components/_portfolio.scss */
+    #recent-projects .project .project-hex,
+    #portfolio .project .project-hex {
       width: 200px;
       height: 400px;
       margin: -80px 0 0 20px; }
       /* line 45, ../sass/_mixins.scss */
-      #recent-projects .project .project-image.hex-container,
-      #portfolio .project .project-image.hex-container {
+      #recent-projects .project .project-hex.hex-container,
+      #portfolio .project .project-hex.hex-container {
         overflow: hidden;
         -webkit-transform: rotate(120deg);
         -moz-transform: rotate(120deg);
@@ -3918,8 +3910,8 @@ header #responsive-menu-container {
         transform: rotate(120deg);
         cursor: pointer; }
         /* line 54, ../sass/_mixins.scss */
-        #recent-projects .project .project-image.hex-container .hex-inner-1,
-        #portfolio .project .project-image.hex-container .hex-inner-1 {
+        #recent-projects .project .project-hex.hex-container .hex-inner-1,
+        #portfolio .project .project-hex.hex-container .hex-inner-1 {
           overflow: hidden;
           width: 100%;
           height: 100%;
@@ -3929,8 +3921,8 @@ header #responsive-menu-container {
           -o-transform: rotate(-60deg);
           transform: rotate(-60deg); }
           /* line 64, ../sass/_mixins.scss */
-          #recent-projects .project .project-image.hex-container .hex-inner-1 .hex-inner-2,
-          #portfolio .project .project-image.hex-container .hex-inner-1 .hex-inner-2 {
+          #recent-projects .project .project-hex.hex-container .hex-inner-1 .hex-inner-2,
+          #portfolio .project .project-hex.hex-container .hex-inner-1 .hex-inner-2 {
             width: 100%;
             height: 100%;
             background-repeat: no-repeat;
@@ -3942,41 +3934,70 @@ header #responsive-menu-container {
             -ms-transform: rotate(-60deg);
             -o-transform: rotate(-60deg);
             transform: rotate(-60deg); }
-      /* line 54, ../sass/components/_portfolio.scss */
-      #recent-projects .project .project-image img,
-      #portfolio .project .project-image img {
+      /* line 71, ../sass/components/_portfolio.scss */
+      #recent-projects .project .project-hex img,
+      #portfolio .project .project-hex img {
         width: 100%;
         height: auto; }
-      /* line 60, ../sass/components/_portfolio.scss */
-      #recent-projects .project .project-image .hex-inner-2,
-      #portfolio .project .project-image .hex-inner-2 {
+      /* line 77, ../sass/components/_portfolio.scss */
+      #recent-projects .project .project-hex .hex-inner-2,
+      #portfolio .project .project-hex .hex-inner-2 {
         position: relative; }
-        /* line 63, ../sass/components/_portfolio.scss */
-        #recent-projects .project .project-image .hex-inner-2 .project-title,
-        #portfolio .project .project-image .hex-inner-2 .project-title {
+        /* line 80, ../sass/components/_portfolio.scss */
+        #recent-projects .project .project-hex .hex-inner-2 .project-title,
+        #portfolio .project .project-hex .hex-inner-2 .project-title {
           position: absolute;
           top: 120px;
           text-align: center;
           margin: 20px; }
-          /* line 69, ../sass/components/_portfolio.scss */
-          #recent-projects .project .project-image .hex-inner-2 .project-title h4,
-          #portfolio .project .project-image .hex-inner-2 .project-title h4 {
+          /* line 86, ../sass/components/_portfolio.scss */
+          #recent-projects .project .project-hex .hex-inner-2 .project-title h4,
+          #portfolio .project .project-hex .hex-inner-2 .project-title h4 {
             color: #fff;
             text-shadow: 1px 1px 1px #333;
             line-height: 40px; }
-    /* line 80, ../sass/components/_portfolio.scss */
+    /* line 97, ../sass/components/_portfolio.scss */
+    #recent-projects .project .project-box,
+    #portfolio .project .project-box {
+      width: 100%;
+      height: 100%;
+      background-size: 50%;
+      background-repeat: repeat;
+      margin: 10px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 30px;
+      text-align: center;
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      transform-style: preserve-3d; }
+      /* line 110, ../sass/components/_portfolio.scss */
+      #recent-projects .project .project-box .project-title,
+      #portfolio .project .project-box .project-title {
+        position: relative;
+        top: 40%;
+        transform: translateY(-50%); }
+        /* line 115, ../sass/components/_portfolio.scss */
+        #recent-projects .project .project-box .project-title h4,
+        #portfolio .project .project-box .project-title h4 {
+          color: #fff;
+          text-shadow: 2px 2px 8px #333; }
+    /* line 122, ../sass/components/_portfolio.scss */
     #recent-projects .project:hover,
     #portfolio .project:hover {
       -webkit-transform: scale(1.1);
       transform: scale(1.1); }
 
-/* line 88, ../sass/components/_portfolio.scss */
+/* line 130, ../sass/components/_portfolio.scss */
 #project .project-image {
   display: block;
   margin-right: auto;
   margin-left: auto; }
-  @media (min-width: 1200px) {
-    /* line 88, ../sass/components/_portfolio.scss */
+  @media (min-width: 860px) {
+    /* line 130, ../sass/components/_portfolio.scss */
     #project .project-image {
       float: left;
       margin-right: 20px;

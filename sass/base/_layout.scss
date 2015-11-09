@@ -6,9 +6,9 @@ $susy: (
 );
 
 //Layout variables
-$large: 1600px;
-$medium: 1200px;
-$small: 800px;
+$large: 1000px;
+$medium: 860px;
+$small: 740px;
 $tiny: 500px;
 
 /*
@@ -26,7 +26,6 @@ $tiny: 500px;
 header,
 .container,
 footer {
-	// @include container($defaultContainer);
 	@include container($medium);
 }
 

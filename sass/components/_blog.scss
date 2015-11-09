@@ -16,7 +16,8 @@
 	background: url('../images/header-bg.png');
 }
 
-#recent-posts {
+#recent-posts,
+#blog {
 	clear: both;
 	padding-top: 60px;
 	padding-bottom: 100px;
@@ -31,11 +32,19 @@
 		padding-top: 50px;
 		border-top: 1px solid $smoke;
 		margin-top: 50px;
-
+		position: relative;
 
 		.post-image {
-			float: left;
-			margin-right: 50px;
+			@include center-element;
+			width: 200px;
+			margin-bottom: 50px;
+
+			@include breakpoint($small) {
+				float: left;
+				margin-left: 0px;
+				margin-right: 50px;	
+				margin-bottom: 0;
+			}
 
 			img {
 				@include circle;
@@ -51,6 +60,19 @@
 		}
 
 		.post-body {}
+
+		.post-read-more,
+		.post-toggle {
+			cursor: pointer;
+			position: absolute;
+			bottom: 0;
+			right: 30px;
+		}
+
+		.see-all-posts {
+			width: 123px;
+			@include center-element;
+		}
 	}
 
 	#single-post {
@@ -58,55 +80,6 @@
 			@include circle;
 		}
 	}
-}
-
-#blog {
-	margin-top: 100px;
-
-	.post {
-		width: 100%;
-
-		@include breakpoint($tablet) {
-			width: 49%;
-		}
-
-		@include breakpoint($desktop) {
-			width: 33%;			
-		}
-		display: inline-block;
-		@include box-sizing(border-box);
-		padding: 30px;
-
-		.post-image {
-			img {
-				@include center-element;
-				@include circle;
-			}
-		}
-
-		.post-body {
-			padding: 25px;
-			padding-top: 110px;
-			margin-top: -100px;
-			border: 1px solid $smoke;
-
-			.post-title {
-				text-align: center;
-			}
-		}
-
-		.post-read-more {
-			text-align: center;
-
-			a {
-				@include button;
-
-				i.fa {
-					margin-right: 10px;
-				}
-			}
-		}
-	}	
 }
 
 .article-spotlight-image {
