@@ -4,26 +4,22 @@
 </div>
 <div id="home">
 	<div id="recent-projects">
-		<div class="container">
+		<div id="projects-container">
 			<h3>Recent Projects</h3>
 
-			<div class="project" ng-repeat="project in recentProjects.projects">
+			<div center-title class="project" ng-repeat="project in recentProjects.projects">
 				<a href="/projects/{{project.node_id}}">
-					<div class="project-image hex-container">
-						<div class="hex-inner-1">
-							<div class="hex-inner-2" ng-style="{'background-image': 'url({{project.front_image.src}})'}">
-									{{project.title_encoded}}
-									<div class="project-title">
-										<h4>{{project.title}}</h4>
-									</div>
-								
-							</div>
+					<div class="project-box" ng-style="{'background-image': 'url({{project.front_image.src}})'}">
+						<div class="project-title">
+							<h4>{{project.title}}</h4>
 						</div>
 					</div>
 				</a>
 			</div>
 
-			<a href="/portfolio" class="button">View All Projects</a>
+			<div style="clear:both;">
+				<a href="/portfolio" style="margin-top: 50px;" class="button">View All Projects</a>
+			</div>
 		</div>
 	</div>
 
@@ -41,7 +37,7 @@
 				<a class="post-toggle" style="float:right;" ng-click='showLess(this, post.nid)' ng-show="post.shownMore">Show Less</a>
 			</div>
 
-			<a class="button" style="float: right;" href="/blog">See all Posts</a>
+			<a class="button see-all-posts" href="/blog">See all Posts</a>
 		</div>
 	</div>
 </div>

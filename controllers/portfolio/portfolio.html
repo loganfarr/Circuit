@@ -3,26 +3,21 @@
     <h2>"The only source of knowledge is experience"</h2>
     <h3>-Albert Einstein</h3>
 </div>
-<div class="container">
+<div id="projects-container">
     <div id="portfolio">
         <div class="project" ng-repeat="project in portfolio.projects">
-            <div class="project-image hex-container">
-                <div class="hex-inner-1">
-                    <div class="hex-inner-2" ng-style="{'background-image': 'url({{project.front_image.src}})'}">
-                        <a href="/projects/{{project.node_id}}">
-                        {{project.title_encoded}}
-                            <div class="project-title">
-                                <h4>{{project.title}}</h4>
-                            </div>
-                        </a>
+            <a href="/projects/{{project.node_id}}">
+                <div class="project-box" ng-style="{'background-image': 'url({{project.front_image.src}})'}">
+                    <div class="project-title">
+                        <h4>{{project.title}}</h4>
                     </div>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
 
     <div class="clearfix" style="clear:both;"></div>
 
-    <p style="text-align: center;">Also check out my <a href="http://github.com/loganfarr">Github page</a> for additional works.</p>
+    <p style="text-align: center;">Also check out my <a target="_blank" href="http://github.com/loganfarr">Github page</a> for additional works.</p>
 </div>
 

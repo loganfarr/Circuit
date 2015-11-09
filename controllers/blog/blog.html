@@ -5,21 +5,13 @@
 
 <div id="blog" class="container">
 	<div class="post clearfix" ng-repeat="post in blog">
-		<!-- {{post}} -->
-
-		<div class="post-image">
-			<img ng-src="{{post.image.src}}" />
-		</div>
-
-		<div class="post-body">
-			<div class="post-title">
-				<h3>{{post.title}}</h3>
-			</div>
-				{{post.body_summary}}
-				
-				<div class="post-read-more">
-					<a href="/blog/{{post.node_id}}">Read More <i class="fa fa-arrow-right"></i></a>
-				</div>
+		<div class="post-image"><img ng-src="{{post.image.src}}" /></div>
+		<h4 class="post-title"> {{post.title}} </h4>
+		<div class="post-date">{{post.post_date}}</div>
+		<div class="post-summary" ng-bind-html="post.summary" ng-show="!post.shownMore">{{post.summary}}</div>
+		<div class="post-body" ng-bind-html="post.body" ng-show="post.shownMore">{{post.body}}</div>
+		<div class="post-read-more">
+			<a href="/blog/{{post.node_id}}">Read More <i class="fa fa-arrow-right"></i></a>
 		</div>
 	</div>
 </div>
