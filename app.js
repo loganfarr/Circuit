@@ -4,35 +4,35 @@
 	app.config(function($routeProvider, $compileProvider, $locationProvider){
 		$routeProvider
 			.when("/", {
-				templateUrl: "controllers/home/home.html",
+				templateUrl: "/controllers/home/home.html",
 				controller: "HomeController"
 			})
 			.when("/projects", {
-				templateUrl: "controllers/portfolio/portfolio.html",
+				templateUrl: "/controllers/portfolio/portfolio.html",
 				controller: "PortfolioController"
 			})
 			.when("/projects/:projectID", {
-				templateUrl: "controllers/portfolio/project.html",
+				templateUrl: "/controllers/portfolio/project.html",
 				controller: "ProjectController"
 			})
 			.when("/blog", {
-				templateUrl: "controllers/blog/blog.html",
+				templateUrl: "/controllers/blog/blog.html",
 				controller: "BlogController"
 			})
 			.when("/blog/:articleID", {
-				templateUrl: "controllers/blog/article.html",
+				templateUrl: "/controllers/blog/article.html",
 				controller: "ArticleController"
 			})
 			.when("/styleguide", {
-				templateUrl: "controllers/styleguide/styleguide.html",
+				templateUrl: "/controllers/styleguide/styleguide.html",
 				controller: "StyleGuideController"
 			})
 			.when("/about", {
-				templateUrl: "controllers/about/about.html",
+				templateUrl: "/controllers/about/about.html",
 				controller: "AboutController"
 			})
 			.when("/contact", {
-				templateUrl: "controllers/contact/contact.html",
+				templateUrl: "/controllers/contact/contact.html",
 				controller: "ContactController"
 			})
 			.when("/login", {redirectTo:"http://backend.loganfarr.com/user"})

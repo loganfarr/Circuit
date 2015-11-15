@@ -1,7 +1,13 @@
 <html>
 <head>
 	<title>Logan Farr | Web Developer</title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+
+	<meta charset="UTF-8" />
+	<meta name="description" content="Logan Farr, Salt Lake City based web developer"/>
+	<meta name="keywords" content="Salt Lake City,Utah,Web Developer,Drupal,Front End Developer,CSS,CSS3,HTML5,JavaScript,PHP,Back End Developer"/>
+	<meta name="Author" content="Logan Farr" /> 
+	<meta name="robots" content="index,follow" />
 
 	<!-- CDN Files -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -9,33 +15,34 @@
 	<script type="text/javascript" src="https://code.angularjs.org/1.2.14/angular-route.js"></script>
 
 	<!-- Config files -->
-	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="/app.js"></script>
 	
 	<!-- Services -->
-	<script type="text/javascript" src="services/backend.js"></script>
+	<script type="text/javascript" src="/services/backend.js"></script>
 
 	<!-- Directives -->
-	<script type="text/javascript" src="directives/backImg.js"></script>
+	<script type="text/javascript" src="/directives/backImg.js"></script>
+	<script type="text/javascript" src="/directives/centerTitle.js"></script>
 
 	<!-- Controllers -->
-	<script type="text/javascript" src="controllers/menuController.js"></script>
-	<script type="text/javascript" src="controllers/home/home.js"></script>
-	<script type="text/javascript" src="controllers/blog/blog.js"></script>
-	<script type="text/javascript" src="controllers/blog/article.js"></script>
-	<script type="text/javascript" src="controllers/portfolio/portfolio.js"></script>
-	<script type="text/javascript" src="controllers/portfolio/project.js"></script>
-	<script type="text/javascript" src="controllers/about/about.js"></script>
+	<script type="text/javascript" src="/controllers/menuController.js"></script>
+	<script type="text/javascript" src="/controllers/home/home.js"></script>
+	<script type="text/javascript" src="/controllers/blog/blog.js"></script>
+	<script type="text/javascript" src="/controllers/blog/article.js"></script>
+	<script type="text/javascript" src="/controllers/portfolio/portfolio.js"></script>
+	<script type="text/javascript" src="/controllers/portfolio/project.js"></script>
+	<script type="text/javascript" src="/controllers/about/about.js"></script>
 
-	<base href="/index.html">
+	<base href="/">
 </head>
 <body>
 	<div ng-app="loganfarr">
-		<div ng-include src="'header.html'"></div>
+		<div ng-include src="'/header.html'"></div>
 		<div id="main-wrapper" class="wrapper">
 			<div class="error-container"></div>
 			<div ng-view id="main-content"></div>
 		</div>
-		<div ng-include src="'footer.html'"></div>
+		<div ng-include src="'/footer.html'"></div>
 	</div>
 </body>
 </html>
