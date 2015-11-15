@@ -1213,10 +1213,19 @@ blockquote {
   font-style: italic; }
 
 /* line 112, ../sass/base/_html.scss */
+code, pre {
+  font-family: monospace;
+  display: block;
+  background: #e5e5e5;
+  border-radius: 3px;
+  padding: 15px;
+  white-space: normal; }
+
+/* line 121, ../sass/base/_html.scss */
 footer {
   padding: 20px; }
   @media (min-width: 1240px) {
-    /* line 112, ../sass/base/_html.scss */
+    /* line 121, ../sass/base/_html.scss */
     footer {
       padding: 0; } }
 
@@ -3681,16 +3690,19 @@ footer {
       #blog .post .post-image img {
         width: 200px;
         height: 200px;
-        border-radius: 100px; }
-    /* line 54, ../sass/components/_blog.scss */
+        border-radius: 100px;
+        border: 1px solid #ccc;
+        border-radius: 110px;
+        padding: 10px; }
+    /* line 57, ../sass/components/_blog.scss */
     #recent-posts .post .post-title,
     #blog .post .post-title {
       margin-bottom: 1em; }
-    /* line 58, ../sass/components/_blog.scss */
+    /* line 61, ../sass/components/_blog.scss */
     #recent-posts .post .post-date,
     #blog .post .post-date {
       font-style: italic; }
-    /* line 64, ../sass/components/_blog.scss */
+    /* line 67, ../sass/components/_blog.scss */
     #recent-posts .post .post-read-more,
     #recent-posts .post .post-toggle,
     #blog .post .post-read-more,
@@ -3699,21 +3711,21 @@ footer {
       position: absolute;
       bottom: 0;
       right: 30px; }
-    /* line 72, ../sass/components/_blog.scss */
+    /* line 75, ../sass/components/_blog.scss */
     #recent-posts .post .see-all-posts,
     #blog .post .see-all-posts {
       width: 123px;
       display: block;
       margin-right: auto;
       margin-left: auto; }
-  /* line 79, ../sass/components/_blog.scss */
+  /* line 82, ../sass/components/_blog.scss */
   #recent-posts #single-post div.article-image img,
   #blog #single-post div.article-image img {
     width: 200px;
     height: 200px;
     border-radius: 100px; }
 
-/* line 85, ../sass/components/_blog.scss */
+/* line 88, ../sass/components/_blog.scss */
 .article-spotlight-image {
   display: block;
   width: 350px;
@@ -3721,7 +3733,7 @@ footer {
   margin-left: auto;
   margin-bottom: 50px; }
   @media (min-width: 768px) {
-    /* line 85, ../sass/components/_blog.scss */
+    /* line 88, ../sass/components/_blog.scss */
     .article-spotlight-image {
       float: left;
       margin-right: 40px;

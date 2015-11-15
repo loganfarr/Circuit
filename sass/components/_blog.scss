@@ -48,6 +48,9 @@
 
 			img {
 				@include circle;
+				border: 1px solid #ccc;
+				border-radius: 110px;
+				padding: 10px;
 			}
 		}
 
