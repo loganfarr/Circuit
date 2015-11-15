@@ -5,7 +5,7 @@
 
 <div id="blog" class="container">
 	<div class="post clearfix" ng-repeat="post in blog">
-		<div class="post-image"><img ng-src="{{post.image.src}}" /></div>
+		<div class="post-image" ng-show="post.image.src"><img ng-src="{{post.image.src}}" /></div>
 		<h4 class="post-title"> {{post.title}} </h4>
 		<div class="post-date">{{post.post_date}}</div>
 		<div class="post-summary" ng-bind-html="post.summary" ng-show="!post.shownMore">{{post.summary}}</div>
